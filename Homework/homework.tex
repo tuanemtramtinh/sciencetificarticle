@@ -911,4 +911,28 @@ Show that by removing two white squares and two black squares from an
 8 \(\times\) 8 checkerboard (colored as in the text) you can make it 
 impossible to tile the remaining squares using dominoes.
 \subsubsection*{Solution}
+\begin{center}
+    \begin{tikzpicture}[x=1cm]
+        \foreach \y in {0,2,...,6}{
+            \foreach \x in {0,2,...,6}{
+                \fill (\x,\y) rectangle (1+\x,1+\y) rectangle (2+\x,2+\y);}}
+    \end{tikzpicture}
+\end{center}
+So to prove that by removing two white squares and two black squares from an 
+8 \(\times\) 8 checkerboard (colored as in the text) you can make it 
+impossible to tile the remaining squares using dominoes, we will use existence
+proof, which means that we just need to work out a example that can make
+the 8 \(\times\) 8 checkerboard can not be tiled by removing two white squares and
+two black squares. Therefore, we have an example:
+\begin{itemize}
+    \item WLOG, if we first remove two black squares which is adjacent to the white
+    corner square. Next, we will continue remove to white squares which is adjecent to
+    the black corner square. Therefore, there obviously impossible to tile that checkerboard
+    because the domino can not cover two diagonal squares.
+\end{itemize}
+Because it exists a case that when we remove two black squares and two white square
+from an 8 \(\times\) 8 checkerboard that make the checkerboard can not be tiled.
+Therefore, we can prove that by removing two white squares and two black squares from an 
+8 \(\times\) 8 checkerboard (colored as in the text) you can make it 
+impossible to tile the remaining squares using dominoes.
 \end{document}

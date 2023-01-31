@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1675180732 "/Users/tuananh/Desktop/Latex/sciencetificarticle/Homework/homework.tex" "homework.pdf" "homework" 1675180732
-  "/Users/tuananh/Desktop/Latex/sciencetificarticle/Homework/homework.tex" 1675180731 70409 6592322feb1fc68be51b1ae9b6a698af ""
+["pdflatex"] 1675182325 "/Users/tuananh/Desktop/Latex/Homework/homework.tex" "homework.pdf" "homework" 1675182326
+  "/Users/tuananh/Desktop/Latex/Homework/homework.tex" 1675182325 71811 922918e4b1e04057249e8cc5d0ba29b3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -153,8 +153,8 @@
   "8x8CheckerBoardBarrier.png" 1675179748 20572 d1a1dd5c42f5655bd9e1f4a5e07bac88 ""
   "8x8TileCheckerBoard.png" 1675177319 9279 677d4a0dcd6a44ba4e1e2d8f5615d9d0 ""
   "GomoryTheorem-01.png" 1675180484 13861 802b3ecd802f7de7fd968e222b36df92 ""
-  "homework.aux" 1675180732 779 fc8e05fb91d1c8eec24ce2163e95b993 "pdflatex"
-  "homework.tex" 1675180731 70409 6592322feb1fc68be51b1ae9b6a698af ""
+  "homework.aux" 1675182326 779 f3dba1e050e8313916e3d6f5b56e5bbf "pdflatex"
+  "homework.tex" 1675182325 71811 922918e4b1e04057249e8cc5d0ba29b3 ""
   (generated)
   "homework.aux"
   "homework.log"
