@@ -1,0 +1,283 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage[]{amsthm} 
+\usepackage[]{amssymb} 
+\usepackage[utf8]{vietnam}
+\usepackage{CJKutf8}
+\usepackage{enumitem}
+\title{Bài tập tuần 5}
+\author{Nguyễn Tuấn Anh - ID: 2252038 - CN03}
+\begin{document}
+\maketitle
+\section*{Xác định sai số phép đo trực tiếp}
+\subsection*{Bài 3}
+$h_1 = 690mm$\\ 
+Thước mm: $\Delta x_{ht} = 1mm$\\
+Máy đo thời gian: $\Delta t_{ht} = 0.001s$\\
+Thước kẹp: $\Delta x_{ht} = 0.02mm$\\
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Lần đo & d(mm) & t(s) & $h_2$(mm) \\
+        \hline
+        1 & 8.14 & 7.521 & 515 \\
+        \hline
+        2 & 8.14 & 7.506 & 519 \\ 
+        \hline
+        3 & 8.14 & 7.517 & 521 \\
+        \hline
+        4 & 8.16 & 7.515 & 518 \\
+        \hline
+        5 & 8.16 & 7.509 & 517 \\
+        \hline
+    \end{tabular}
+\end{center}
+Kết quả đo của $h_1$ bằng tổng $h_1$ với sai số hệ thống của thước mm chia cho một nửa:
+\begin{align*}
+    H_1 = h_1 \pm \frac{x_{ht}}{2} = 690 \pm 0.5(mm)
+\end{align*}
+
+Giá trị trung bình của đường kính $d$:
+\begin{align*}
+    \overline{d} = \frac{1}{n}\cdot\sum_{i = 1}^{n}d_i = \frac{1}{5}\cdot(d_1 + d_2 + d_3 + d_4 + d_5) = \frac{1}{5}\cdot(8.14 + 8.14 + 8.14 + 8.16 + 8.16) = 8.148(mm)
+\end{align*}
+Giá trị sai số tuyệt đối:
+\begin{enumerate}
+    \item $\Delta d_1 = |d_1 - d| = |8.14 - 8.148| = 0.008(mm)$
+    \item $\Delta d_2 = |d_2 - d| = |8.14 - 8.148| = 0.008(mm)$
+    \item $\Delta d_3 = |d_3 - d| = |8.14 - 8.148| = 0.008(mm)$
+    \item $\Delta d_4 = |d_4 - d| = |8.16 - 8.148| = 0.012(mm)$
+    \item $\Delta d_5 = |d_5 - d| = |8.16 - 8.148| = 0.012(mm)$
+\end{enumerate}
+Giá trị sai số tuyệt đối trung bình:
+\begin{align*}
+    \overline{\Delta d} &= \frac{1}{n}\cdot\sum_{i=1}^{n}\Delta d_i = \frac{1}{5}\cdot(\Delta d_1 + \Delta d_2 + \Delta d_3 + \Delta d_4 + \Delta d_5)\\ 
+    &=  \frac{1}{5}\cdot(0.008 + 0.008 + 0.008 + 0.012 + 0.012) = 0.0096(mm)
+\end{align*}
+Sai số toàn phần:
+\begin{align*}
+    \Delta d = \overline{\Delta d} + \Delta x_{ht} =0.0096 + 0.02 =0.296(mm) 
+\end{align*}
+Giá trị đo lường của đại lượng $d$ là:
+\begin{align*}
+    d = \overline{d} \pm \Delta d = 8.15 \pm 0.03(mm)
+\end{align*}
+
+Giá trị trung bình của thời gian $t$:
+\begin{align*}
+    \overline{t} = \frac{1}{n}\cdot\sum_{i = 1}^{n}t_i = \frac{1}{5}\cdot(t_1 + t_2 + t_3 + t_4 + t_5) = \frac{1}{5}\cdot(7.521 + 7.506 + 7.517 + 7.515 + 7.509) = 7.5136(s)
+\end{align*}
+Giá trị sai số tuyệt đối:
+\begin{enumerate}
+    \item $\Delta t_1 = |t_1 - t| = |7.521 - 7.5136| = 0.0074(s)$
+    \item $\Delta t_2 = |t_2 - t| = |7.506 - 7.5136| = 0.0076(s)$
+    \item $\Delta t_3 = |t_3 - t| = |7.517 - 7.5136| = 0.0034(s)$
+    \item $\Delta t_4 = |t_4 - t| = |7.515 - 7.5136| = 0.0014(s)$
+    \item $\Delta t_5 = |t_5 - t| = |7.509 - 7.5136| = 0.0046(s)$
+\end{enumerate}
+Giá trị sai số tuyệt đối trung bình:
+\begin{align*}
+    \overline{\Delta t} &= \frac{1}{n}\cdot\sum_{i=1}^{n}\Delta t_i = \frac{1}{5}\cdot(\Delta t_1 + \Delta t_2 + \Delta t_3 + \Delta t_4 + \Delta t_5)\\ 
+    &=  \frac{1}{5}\cdot(0.0074 + 0.0076 + 0.0034 + 0.0014 + 0.0046) = 0.00488(s)
+\end{align*}
+Sai số toàn phần:
+\begin{align*}
+    \Delta t = \overline{\Delta t} + \Delta t_{ht} =0.00488 + 0.001 =0.00588(s) 
+\end{align*}
+Giá trị đo lường của đại lượng $t$ là:
+\begin{align*}
+    t = \overline{t} \pm \Delta t = 7.51 \pm 0.01(s)
+\end{align*}
+
+Giá trị trung bình của chiều cao $h_2$:
+\begin{align*}
+    \overline{h_2} = \frac{1}{n}\cdot\sum_{i = 1}^{n}{h_2}_i = \frac{1}{5}\cdot({h_2}_1 + {h_2}_2 + {h_2}_3 + {h_2}_4 + {h_2}_5) = \frac{1}{5}\cdot(515 + 519 + 521 + 518 + 517) = 518(mm)
+\end{align*}
+Giá trị sai số tuyệt đối:
+\begin{enumerate}
+    \item $\Delta {h_2}_1 = |{h_2}_1 - h_2| = |515 - 518| = 3(mm)$
+    \item $\Delta {h_2}_2 = |{h_2}_2 - h_2| = |519 - 518| = 1(mm)$
+    \item $\Delta {h_2}_3 = |{h_2}_3 - h_2| = |521 - 518| = 3(mm)$
+    \item $\Delta {h_2}_4 = |{h_2}_4 - h_2| = |518 - 518| = 0(mm)$
+    \item $\Delta {h_2}_5 = |{h_2}_5 - h_2| = |517 - 518| = 1(mm)$
+\end{enumerate}
+Giá trị sai số tuyệt đối trung bình:
+\begin{align*}
+    \overline{\Delta h_2} &= \frac{1}{n}\cdot\sum_{i=1}^{n}\Delta {h_2}_i = \frac{1}{5}\cdot(\Delta {h_2}_1 + \Delta {h_2}_2 + \Delta {h_2}_3 + \Delta {h_2}_4 + \Delta {h_2}_5)\\ 
+    &=  \frac{1}{5}\cdot(3 + 1 + 3 + 0 + 1) = 1.6(mm)
+\end{align*}
+Sai số toàn phần:
+\begin{align*}
+    \Delta h_2 = \overline{\Delta h_2} + \Delta x_{ht} =1.6 + 1 =2.6(mm) 
+\end{align*}
+Giá trị đo lường của đại lượng $h_2$ là:
+\begin{align*}
+    h_2 = \overline{h_2} \pm \Delta h_2 = 518 \pm 2.6(mm)
+\end{align*}
+
+
+
+\section*{Xác định sai số phép đo gián tiếp}
+\subsubsection*{Bài 1}
+\textit{$H = 1.72 \pm 0.02$ m} \textit{M = $70.5 \pm 0.1$ kg} \textit{BMI = M/$H^2$}\\
+
+Ta có:
+\begin{align*}
+    BMI = M / H^2 \rightarrow \overline{BMI} = \overline{M}/\overline{H^2} = 70.5/1.72^2 = 23.8304(kg/m^2)
+\end{align*}
+Tính logarit:
+\begin{align*}
+    \ln BMI & = \ln \overline{M} - \ln \overline{H}^2 = \ln \overline{M} - 2\ln \overline{H}
+\end{align*}
+Lấy vi phân của biểu thức:
+\begin{align*}
+    \frac{\partial BMI}{BMI} = \frac{\partial \overline{M}}{\overline{M}} - 2\cdot\frac{\partial\overline{H}}{\overline{H}}
+\end{align*}
+Thêm trị tuyệt đối:
+\begin{align*}
+    \left|\frac{\partial BMI}{BMI}\right| = \left|\frac{\partial \overline{M}}{\overline{M}}\right| + 2\cdot\left|-\frac{\partial\overline{H}}{\overline{H}}\right|
+\end{align*}
+Thay các vi phân bằng các sai phân
+\begin{align*}
+    \left|\frac{\Delta BMI}{BMI}\right| & = \left|\frac{\Delta \overline{M}}{\overline{M}}\right| + 2\cdot\left|-\frac{\Delta\overline{H}}{\overline{H}}\right| \\
+    \left|\frac{\Delta BMI}{BMI}\right| & = \left|\frac{0.1}{70.5}\right| + 2\cdot\left|-\frac{0.02}{1.72}\right| = 0.0247                                      \\
+    \Rightarrow \Delta BMI              & = 0.0247 \cdot BMI = 0.0247\cdot 23.8304 = 0.5886 (kg/m^2)
+\end{align*}
+Vậy ta có được:
+\begin{align*}
+    BMI = 23.83 \pm 0.59 (kg/m^2)
+\end{align*}
+\subsubsection*{Bài 2}
+Bảng 1: Độ chính xác của thước kẹp: 0.02mm, $\pi = 3.14$, $\Delta \pi = 0.005$
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Lần đo & D($10^{-3} m$) & $\Delta D(10^{-3} m)$ & d($10^{-3} m$) & $\Delta d(10^{-3} m)$ &  h($10^{-3} m$) & $\Delta h(10^{-3} m)$\\
+        \hline
+        1 & 34.84 & & 28.10 & & 8.84 & \\
+        \hline
+        2 & 34.82 & & 28.12 & & 8.86 & \\
+        \hline 
+        3 & 34.82 & & 28.10 & & 8.84 & \\
+        \hline
+        Trung bình & & & & & & \\
+        \hline
+    \end{tabular}
+\end{center}
+Hãy cho biết kết quả của phép đo V, biết rằng $\overline{V} = \frac{\pi}{4}(\overline{D}^2 - \overline{d}^2)\cdot\overline{h}$\\
+
+Giá trị trung bình $D$ ở các lần đo:
+\begin{align*}
+    \centering
+    \overline{D} = \frac{1}{n}\cdot\sum_{i=1}^{n}D_i = \frac{1}{3}\cdot(D_1 + D_2 + D_3) = \frac{1}{3}\cdot(34.84 + 34.82 + 34.82) = 34.8267 (10^{-3} m)
+\end{align*}
+Giá trị sai số tuyệt đối: 
+\begin{enumerate}
+    \item $\Delta D_1 = |D_1 - \overline{D}| = |34.84 - 34.8267| = 0.0133 (10^{-3}m)$
+    \item $\Delta D_2 = |D_2 - \overline{D}| = |34.82 - 34.8267| = 0.0067 (10^{-3}m)$
+    \item $\Delta D_3 = |D_3 - \overline{D}| = |34.82 - 34.8267| = 0.0067 (10^{-3}m)$
+\end{enumerate}
+Giá trị sai số tuyệt đối trung bình:
+\begin{align*}
+    \overline{\Delta D} = \frac{1}{n}\cdot\sum_{i=1}^{n}\Delta D_i = \frac{1}{3}\cdot(\Delta D_1 + \Delta D_2 + \Delta D_3) = \frac{1}{3}\cdot(0.0133 + 0.0067 + 0.0067) = 0.0089 (10^{-3} m)
+\end{align*}
+
+Giá trị trung bình $d$ ở các lần đo:
+\begin{align*}
+    \overline{d} = \frac{1}{n}\cdot\sum_{i=1}^{n}d_i = \frac{1}{3}\cdot(d_1 + d_2 + d_3) = \frac{1}{3}\cdot(28.10 + 28.12 + 28.10) = 28.1067 (10^{-3} m)
+\end{align*}
+Giá trị sai số tuyệt đối:
+\begin{enumerate}
+    \item $\Delta d_1 = |d_1 - \overline{d}| = |28.10 - 28.1067| = 0.0067 (10^{-3}m)$
+    \item $\Delta d_2 = |d_2 - \overline{d}| = |28.12 - 28.1067| = 0.0133 (10^{-3}m)$
+    \item $\Delta d_3 = |d_3 - \overline{d}| = |28.10 - 28.1067| = 0.0067 (10^{-3}m)$
+\end{enumerate}
+Giá trị sai số tuyệt đối trung bình:
+\begin{align*}
+    \overline{\Delta d} = \frac{1}{n}\cdot\sum_{i=1}^{n}\Delta d_i = \frac{1}{3}\cdot(\Delta d_1 + \Delta d_2 + \Delta d_3) = \frac{1}{3}\cdot(0.0067+ 0.0133 + 0.0067) = 0.0089 (10^{-3} m)
+\end{align*}
+
+Giá trị trung bình $h$ ở các lần đo:
+\begin{align*}
+    \centering
+    \overline{h} = \frac{1}{n}\cdot\sum_{i=1}^{n}h_i = \frac{1}{3}\cdot(h_1 + h_2 + h_3) = \frac{1}{3}\cdot(8.84 + 8.86 + 8.84) = 8.8467 (10^{-3} m)
+\end{align*}
+Giá trị sai số tuyệt đối:
+\begin{enumerate}
+    \item $\Delta h_1 = |h_1 - \overline{h}| = |8.84 - 8.8467| = 0.0067 (10^{-3}m)$
+    \item $\Delta h_2 = |h_2 - \overline{h}| = |8.86 - 8.8467| = 0.0133 (10^{-3}m)$
+    \item $\Delta h_3 = |h_3 - \overline{h}| = |8.84 - 8.8467| = 0.0067 (10^{-3}m)$
+\end{enumerate}
+Giá trị sai số tuyệt đối trung bình:
+\begin{align*}
+    \overline{\Delta h} = \frac{1}{n}\cdot\sum_{i=1}^{n}\Delta h_i = \frac{1}{3}\cdot(\Delta h_1 + \Delta h_2 + \Delta h_3) = \frac{1}{3}\cdot(0.0067+ 0.0133 + 0.0067) = 0.0089 (10^{-3} m)
+\end{align*}
+
+Ta có bảng hoàn thiện sau:
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Lần đo & D($10^{-3} m$) & $\Delta D(10^{-3} m)$ & d($10^{-3} m$) & $\Delta d(10^{-3} m)$ &  h($10^{-3} m$) & $\Delta h(10^{-3} m)$\\
+        \hline
+        1 & 34.84 & 0.0133 & 28.10 & 0.0067 & 8.84 & 0.0067\\
+        \hline
+        2 & 34.82 & 0.0067 & 28.12 & 0.0133 & 8.86 & 0.0133\\
+        \hline 
+        3 & 34.82 & 0.0067 & 28.10 & 0.0067 & 8.84 & 0.0067\\
+        \hline
+        Trung bình & 34.8267 & 0.0089 & 28.1067 & 0.0089 & 8.8467 & 0.0089 \\
+        \hline
+    \end{tabular}
+\end{center}
+
+Ta có lần lượt sai số toàn phần của các đại lượng $\Delta D, \Delta d, \Delta h$:
+\begin{itemize}
+    \item $\Delta D = \overline{\Delta D} + \Delta x_{ht} = 0.0089 + 0.02 = 0.0289(10^{-3} m)$
+    \item $\Delta d = \overline{\Delta d} + \Delta x_{ht} = 0.0089 + 0.02 = 0.0289(10^{-3} m)$
+    \item $\Delta h = \overline{\Delta h} + \Delta x_{ht} = 0.0089 + 0.02 = 0.0289(10^{-3} m)$ 
+\end{itemize}
+Từ đó, ta có thể tìm ra được kết quả đo của các đại lượng $D, d, h$:
+\begin{itemize}
+    \item $D = \overline{D} + \Delta D = 34.83 \pm 0.03 (10^{-3} m)$
+    \item $d = \overline{d} + \Delta d = 28.11 \pm 0.03 (10^{-3} m)$
+    \item $h = \overline{h} + \Delta h = 8.85 \pm 0.03 (10^{-3} m)$
+\end{itemize}
+
+Theo đề bài, ta có: 
+\begin{align*}
+    \overline{V} &= \frac{\pi}{4}\cdot(\overline{D}^2 - \overline{d}^2)\cdot\overline{h}\\
+    \overline{V} &= \frac{\pi}{4}\cdot(34.83^2 - 28.11^2)\cdot 8.85\\
+    \overline{V} &= \frac{3.14}{4}\cdot(34.83^2 - 28.11^2)\cdot 8.85 = 2938.3866(10^{-9} m^3)
+\end{align*}
+
+Lại có:
+\begin{align*}
+    \overline{V} = \overline{\pi}\cdot(\overline{D}^2 - \overline{d}^2)\cdot\overline{h}
+\end{align*}
+Tính logarit tự nhiên:
+\begin{align*}
+    \ln \overline{V} &= \ln(\overline{\pi}\cdot(\overline{D}^2 - \overline{d}^2)\cdot\overline{h})\\
+    \ln \overline{V} &= \ln\overline{\pi} + \ln(\overline{D}^2 - \overline{d}^2) + \ln\overline{h}\\
+\end{align*}
+Lấy vi phân của biểu thức:
+\begin{align*}
+    \frac{\partial V}{\overline{V}} &= \frac{\partial\pi}{\overline{\pi}} + \frac{2\cdot\partial D\cdot \overline{D} - 2\cdot\partial d\cdot \overline{d}}{\overline{D}^2 - \overline{d}^2} + \frac{\partial h}{\overline{h}}
+\end{align*}
+Lấy giá trị tuyệt đối của mỗi đạo hàm:
+\begin{align*}
+    \left|\frac{\partial V}{\overline{V}}\right| &= \left|\frac{\partial\pi}{\overline{\pi}}\right| + \left|\frac{2\cdot\partial D\cdot \overline{D} - 2\cdot\partial d\cdot \overline{d}}{\overline{D}^2 - \overline{d}^2}\right| + \left|\frac{\partial h}{\overline{h}}\right|
+\end{align*}
+Thay các vi phân thành các sai phân:
+\begin{align*}
+    \left|\frac{\Delta V}{\overline{V}}\right| &= \left|\frac{\Delta\pi}{\overline{\pi}}\right| + \left|\frac{2\cdot\Delta D\cdot \overline{D} - 2\cdot\Delta d\cdot \overline{d}}{\overline{D}^2 - \overline{d}^2}\right| + \left|\frac{\Delta h}{\overline{h}}\right|\\
+    \left|\frac{\Delta V}{\overline{V}}\right| &= \left|\frac{0.005}{3.14}\right| + 2\cdot\left|\frac{0.03\cdot 34.83 - 0.03\cdot 28.11}{34.83^2 - 28.11^2}\right| + \left|\frac{0.03}{8.85}\right|\\
+    \left|\frac{\Delta V}{\overline{V}}\right| &= 0.0059 \\
+    \Rightarrow \Delta V &= \overline{V}\cdot 0.0059 = 2938.3866 \cdot 0.0059 = 17.3364 (10^{-9}m^3)
+\end{align*}
+Từ đó, ta có được kết quả đo của đại lượng $V$:
+\begin{align*}
+    V = \overline{V} + \Delta V = 2938.39 \pm 17.34 (10^{-9} m^3)
+\end{align*}
+\end{document}
