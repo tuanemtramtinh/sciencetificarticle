@@ -1,6 +1,6 @@
-PWD c:\Users\pc\Desktop\Latex
+PWD c:\Users\pc\Desktop\Latex\TNVL\Week5
 INPUT C:\Users\pc\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\pc\Desktop\Latex\Week5.tex
+INPUT c:\Users\pc\Desktop\Latex\TNVL\Week5\Week5.tex
 OUTPUT Week5.log
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

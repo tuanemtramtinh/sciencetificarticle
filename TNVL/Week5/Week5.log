@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.1.30)  30 JAN 2023 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.1.30)  1 FEB 2023 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/pc/Desktop/Latex/Week5.tex
-(c:/Users/pc/Desktop/Latex/Week5.tex
+**c:/Users/pc/Desktop/Latex/TNVL/Week5/Week5.tex
+(c:/Users/pc/Desktop/Latex/TNVL/Week5/Week5.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-24> (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -557,14 +557,14 @@ Overfull \hbox (75.21034pt too wide) in paragraph at lines 220--233
 [5] [6] (Week5.aux) ) 
 Here is how much of TeX's memory you used:
  5058 strings out of 476375
- 74082 string characters out of 5790391
+ 74159 string characters out of 5790391
  1869299 words of memory out of 5000000
  25367 multiletter control sequences out of 15000+600000
  526621 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,311b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,65p,322b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on Week5.pdf (6 pages, 161092 bytes).
+Output written on Week5.pdf (6 pages, 161093 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

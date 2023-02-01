@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1675075506 "c:/Users/pc/Desktop/Latex/Week5.tex" "Week5.pdf" "Week5" 1675075508 0
-  "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1675054379 88371 b965f57369ed322039596060d18f4416 ""
+["pdflatex"] 1675246091 "c:/Users/pc/Desktop/Latex/TNVL/Week5/Week5.tex" "Week5.pdf" "Week5" 1675246093 0
+  "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1675098353 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1675052846 11548 4a1cf54c960cd05530facd5f390bc11f ""
   "C:/Users/pc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1675053420 23172458 74956b4b6edf4e6bd84a7efe126b412c ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
@@ -75,9 +75,9 @@
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.dfu" 1368738347 13949 387dd4fa58aea5f873839c93430fffed ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/vntex/vietnam.sty" 1368738347 2477 91784aa2c9213f74609391e3cae65a13 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/vntex/vncaps.tex" 1368738347 3273 a55ebdb07413d2fea580f210e3c0b252 ""
-  "Week5.aux" 1675075508 112 a02d5e4ac731e0ceb5f2c7e8018f0da1 "pdflatex"
-  "Week5.tex" 1675075506 13361 16b5abae9bcbca34b5f5e9768e736cc1 ""
-  "c:/Users/pc/Desktop/Latex/Week5.tex" 1675075506 13361 16b5abae9bcbca34b5f5e9768e736cc1 ""
+  "Week5.aux" 1675246093 112 a02d5e4ac731e0ceb5f2c7e8018f0da1 "pdflatex"
+  "Week5.tex" 1675246090 13362 96200af4a38b8803a7bcd4e1284ec499 ""
+  "c:/Users/pc/Desktop/Latex/TNVL/Week5/Week5.tex" 1675246090 13362 96200af4a38b8803a7bcd4e1284ec499 ""
   (generated)
   "Week5.aux"
   "Week5.log"
