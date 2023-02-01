@@ -935,4 +935,58 @@ from an 8 \(\times\) 8 checkerboard that make the checkerboard can not be tiled.
 Therefore, we can prove that by removing two white squares and two black squares from an 
 8 \(\times\) 8 checkerboard (colored as in the text) you can make it 
 impossible to tile the remaining squares using dominoes.
+\subsection*{Exercise 50}
+Find all squares, if they exist, on an 8 \(\times\) 8 checkerboard such that 
+the board obtained by removing one of these squares can be tiled using 
+straight triominoes.
+\clearpage
+\subsubsection*{Solution}
+\begin{figure}
+    \begin{center}
+        \includegraphics[width = 0.8\textwidth]{8x8Checkerboard3Color.png}
+        \caption{8 \(\times\) 8 checkerboard with 3 colors}
+    \end{center}
+\end{figure}
+As we can see from \textbf{Figure 6}, there are 21 black squares, 21 blue squares
+and 22 white squares (64 total). Next, we will check about three cases for the
+removed square. When we remove one square, there will be 63 squares left:
+\begin{itemize}
+    \item The square removed is black square:\\ 
+    If we remove one black square, there will be 20 black, 21 blue and 22 white left.
+    However 63/3 = 21, which means that there will be 21 black, 21 blue and 21 white 
+    but we only have 20 black, 21 blue and 22 white so it is a contradiction.
+    Therefore, this case is impossible.
+    \item The square removed is blue square:
+    If we remove one blue square, there will be 21 black, 20 blue and 22 white left.
+    However 63/3 = 21, which means that there will be 21 black, 21 blue and 21 white 
+    but we only have 21 black, 20 blue and 22 white so it is a contradiction.
+    Therefore, this case is impossible
+    \item The square removed is white square:
+    If we remove one white square, there will be 21 black, 21 blue and 21 white left.
+    Moreover, 63/3 = 21 so there will be exist a checkerboard with one white square
+    removed can be tiled using string triominoes. Additionally, we can also see that
+    on the checkerboard, the coordinate (3,3), (3,6), (6,3), (6,6) is always keep
+    white color no matter we rotate the checkerboard. Because only these four squares
+    keep the color in all condition so that if we remove on of these square, we are able
+    to tile the checkerboard within one square missing.\\
+
+    As we can see from \textbf{Figure 7}, the coordinate (3, 3) square is the only
+    square which is not filled by triominoes so if we remove this square and so on the 3 other
+    coordinates above. Therefore, it exist the board can be tiled with one square removed.
+\end{itemize}
+\begin{figure}
+    \begin{center}
+        \includegraphics{8x8CheckerboardTri.png}
+        \caption{8$ \times $8 checkerboard with one white square removed}
+    \end{center}
+\end{figure}
+\subsection*{Exercise 51}
+\begin{enumerate} [label = (\alph*)]
+    \item Draw each of the five different tetrominoes, where a tetromino is a polyomino consisting of four squares.
+    \item For each of the five different tetrominoes, prove or disprove that you can tile a standard checkerboard us- ing these tetrominoes.
+\end{enumerate}
+\subsubsection*{Solution}
+\subsection*{Exercise 52}
+Prove or disprove that you can tile a 10 × 10 checker- board using straight tetrominoes.
+\subsubsection*{Solution}
 \end{document}
