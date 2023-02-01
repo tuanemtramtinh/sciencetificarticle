@@ -1,9 +1,14 @@
 # Fdb version 4
-["pdflatex"] 1675092968 "c:/Users/pc/Desktop/Latex/Homework/homework.tex" "homework.pdf" "homework" 1675092970 0
+["pdflatex"] 1675244944 "c:/Users/pc/Desktop/Latex/Homework/homework.tex" "homework.pdf" "homework" 1675244947 0
   "2dominoes.png" 1675090873 1371 ccb314e62565536fb7b6eb465ce6adb1 ""
+  "4x4CheckerBoard.jpeg" 1675238935 5762 6f6f9861d4fe7990354f2ab62c1d2bcf ""
+  "5dominoes.png" 1675239489 5280 7e0ff078b271cd54a58dc56681b95f74 ""
   "5x5Checkerboard-01.png" 1675091936 7042 5529552015e2c113a4d7d351eb11ce39 ""
+  "8x8CheckerBoardBarrier.png" 1675238935 20572 170525e8aa6d962acb9a19a3ef3cdab6 ""
+  "8x8Checkerboard3Color.png" 1675238935 31592 e969c9f9b01fef115958803595903a26 ""
+  "8x8CheckerboardTri.png" 1675238935 24998 b6826a5b45accbfb9eb001077f94c2eb ""
   "8x8TileCheckerBoard.png" 1675090351 9279 6912a68d95278ef278c51752965c9302 ""
-  "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1675054379 88371 b965f57369ed322039596060d18f4416 ""
+  "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1675098353 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1675052846 11548 4a1cf54c960cd05530facd5f390bc11f ""
   "C:/Users/pc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1675053420 23172458 74956b4b6edf4e6bd84a7efe126b412c ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
@@ -148,9 +153,11 @@
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1673775190 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1654690828 1618 6f0598aa81f9ba5cf5d393b4abd3e091 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "c:/Users/pc/Desktop/Latex/Homework/homework.tex" 1675092966 67768 d54fadb739bce211c7d18e4c0634d65b ""
-  "homework.aux" 1675092970 393 fa0ec1ea3bc996db4a5942a6956718ab "pdflatex"
-  "homework.tex" 1675092966 67768 d54fadb739bce211c7d18e4c0634d65b ""
+  "CheckerTileWith4Cases.png" 1675240861 42988 bdf49835b43ab16d926afcf1590b4c4b ""
+  "GomoryTheorem-01.png" 1675238935 13861 1b71e9bad39a42362aeccb896a58cb34 ""
+  "c:/Users/pc/Desktop/Latex/Homework/homework.tex" 1675244943 78926 6e528ad4dd4ac1696d311e4c8c9d5fd9 ""
+  "homework.aux" 1675244946 1374 baa9a51ff992ab0e5c8cb406f4159f79 "pdflatex"
+  "homework.tex" 1675244943 78926 6e528ad4dd4ac1696d311e4c8c9d5fd9 ""
   (generated)
   "homework.aux"
   "homework.log"

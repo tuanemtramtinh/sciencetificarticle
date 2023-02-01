@@ -846,4 +846,199 @@ Use a proof by exhaustion to show that a tiling using
 dominoes of a 4 $\times$ 4 checkerboard with opposite corners
 removed does not exist.
 \subsubsection*{Solution}
+\begin{figure}
+    \begin{center}
+        \includegraphics{4x4CheckerBoard.jpeg}
+        \caption{\(4 \times 4\) Checkerboard}
+    \end{center}
+\end{figure}
+Firstly, assume that the squares in the upper left and lower right corners
+removed. Number of the squares of the original checkerboard from 1 to 16,
+starting in the first row, moving right in this row, then starting in the 
+leftmost square in the second row and moving right, and so on. We will remove
+squares 1 and 16.\\
+
+To prove this by using proof by exhaustion, we will divide the problem into
+2 cases:
+\begin{itemize}
+    \item The first dominoes is laid horizontally start from square 2. So the first dominoes
+    will cover square 2-3. After that, the other squares covered by dominoes
+    in this order: 4-8, 6-7, 5-9, 10-11, 13-14. Therefore, there are 2 square
+    left that are not covered are squares 12 and 15. So this case is impossible.
+    \item The first dominoes is laid vertically start from square 2. So the first dominoes
+    will cover square 2-6. After that, the other squares covered by dominoes
+    in this order: 3-4, 4-8, 5-9, 10-11, 13-14. Therefore, there are 2 square
+    left that are not covered are squares 12 and 15. So this case is impossible.
+\end{itemize}
+Because two cases above are all possible so we can infer that a tiling using dominoes of a 4 × 4
+checkerboard with opposite corners removed does not exist.
+\subsection*{Exercise 48}
+Prove that when a white square and a black square are removed from an 8 \(\times\) 8 checkerboard (colored as in the text) you can tile the remaining squares of the checker- board using dominoes.
+\subsubsection*{Solution}
+\begin{figure}
+    \begin{center}
+        \includegraphics*{8x8CheckerBoardBarrier.png}
+        \caption{Checkerboard with barrier}
+    \end{center}
+\end{figure}
+As we can see from the \textbf{Figure 4}, within the barrier the checkerboard
+is become a 64 continuos squares on the checkerboard. It starts at the upper
+ left corner, go all the way to the right, then all the way down, then all
+  the way to the left, and then weave your way back up to the starting point.
+Therefore, the checkerboard will start at white square and end at black square.
+Moreover, this rule is \textbf{true} for every single path on the checkerboard
+which has these barriers. If it starts with white and ends with black, these paths
+can be tiled with dominoes. Moreover, because path starts with white and
+end with black, therefore, its length will be an even number.\\
+
+With the rule we established above, we can infer that if we remove one random 
+white square and black square, it will break this 64 continuos squares path into
+2 different path start with white square and end with black square(their length will
+be an even number) and all two paths can be tiled with dominoes. There will be
+2 examples below:
+\clearpage
+\begin{figure}
+    \begin{center}
+        \includegraphics[width = 0.8\textwidth]{GomoryTheorem-01.png}
+        \caption{Example of Exercise 48}
+    \end{center}
+\end{figure}
+As you can see from \textbf{Figure 5}, if we remove two opposite color square,
+we still can tile the whole checkerboard by tiling two paths created by 
+removing two opposite color square with even length.
+\subsection*{Exercise 49}
+Show that by removing two white squares and two black squares from an 
+8 \(\times\) 8 checkerboard (colored as in the text) you can make it 
+impossible to tile the remaining squares using dominoes.
+\subsubsection*{Solution}
+\begin{center}
+    \begin{tikzpicture}[x=1cm]
+        \foreach \y in {0,2,...,6}{
+            \foreach \x in {0,2,...,6}{
+                \fill (\x,\y) rectangle (1+\x,1+\y) rectangle (2+\x,2+\y);}}
+    \end{tikzpicture}
+\end{center}
+So to prove that by removing two white squares and two black squares from an 
+8 \(\times\) 8 checkerboard (colored as in the text) you can make it 
+impossible to tile the remaining squares using dominoes, we will use existence
+proof, which means that we just need to work out a example that can make
+the 8 \(\times\) 8 checkerboard can not be tiled by removing two white squares and
+two black squares. Therefore, we have an example:
+\begin{itemize}
+    \item WLOG, if we first remove two black squares which is adjacent to the white
+    corner square. Next, we will continue remove to white squares which is adjecent to
+    the black corner square. Therefore, there obviously impossible to tile that checkerboard
+    because the domino can not cover two diagonal squares.
+\end{itemize}
+Because it exists a case that when we remove two black squares and two white square
+from an 8 \(\times\) 8 checkerboard that make the checkerboard can not be tiled.
+Therefore, we can prove that by removing two white squares and two black squares from an 
+8 \(\times\) 8 checkerboard (colored as in the text) you can make it 
+impossible to tile the remaining squares using dominoes.
+\subsection*{Exercise 50}
+Find all squares, if they exist, on an 8 \(\times\) 8 checkerboard such that 
+the board obtained by removing one of these squares can be tiled using 
+straight triominoes.
+\clearpage
+\subsubsection*{Solution}
+\begin{figure}
+    \begin{center}
+        \includegraphics[width = 0.8\textwidth]{8x8Checkerboard3Color.png}
+        \caption{8 \(\times\) 8 checkerboard with 3 colors}
+    \end{center}
+\end{figure}
+As we can see from \textbf{Figure 6}, there are 21 black squares, 21 blue squares
+and 22 white squares (64 total). Next, we will check about three cases for the
+removed square. When we remove one square, there will be 63 squares left:
+\begin{itemize}
+    \item The square removed is black square:\\ 
+    If we remove one black square, there will be 20 black, 21 blue and 22 white left.
+    However 63/3 = 21, which means that there will be 21 black, 21 blue and 21 white 
+    but we only have 20 black, 21 blue and 22 white so it is a contradiction.
+    Therefore, this case is impossible.
+    \item The square removed is blue square:
+    If we remove one blue square, there will be 21 black, 20 blue and 22 white left.
+    However 63/3 = 21, which means that there will be 21 black, 21 blue and 21 white 
+    but we only have 21 black, 20 blue and 22 white so it is a contradiction.
+    Therefore, this case is impossible
+    \item The square removed is white square:
+    If we remove one white square, there will be 21 black, 21 blue and 21 white left.
+    Moreover, 63/3 = 21 so there will be exist a checkerboard with one white square
+    removed can be tiled using string triominoes. Additionally, we can also see that
+    on the checkerboard, the coordinate (3,3), (3,6), (6,3), (6,6) is always keep
+    white color no matter we rotate the checkerboard. Because only these four squares
+    keep the color in all condition so that if we remove on of these square, we are able
+    to tile the checkerboard within one square missing.\\
+
+    As we can see from \textbf{Figure 7}, the coordinate (3, 3) square is the only
+    square which is not filled by triominoes so if we remove this square and so on the 3 other
+    coordinates above. Therefore, it exist the board can be tiled with one square removed.
+\end{itemize}
+\begin{figure}
+    \begin{center}
+        \includegraphics{8x8CheckerboardTri.png}
+        \caption{8$ \times $8 checkerboard with one white square removed}
+    \end{center}
+\end{figure}
+\subsection*{Exercise 51}
+\begin{enumerate} [label = (\alph*)]
+    \item Draw each of the five different tetrominoes, where a tetromino is a polyomino consisting of four squares.
+    \item For each of the five different tetrominoes, prove or disprove that you can tile a standard checkerboard using these tetrominoes.
+\end{enumerate}
+\clearpage
+\subsubsection*{Solution}
+\begin{enumerate} [label = (\alph*)]
+    \item We will have five different tetrominoes in \textbf{Figure 8}
+    \begin{figure}
+        \begin{center}
+            \includegraphics*{5dominoes.png}
+            \caption{Five different tetrominoes}
+        \end{center}
+    \end{figure}
+    \item Now we will divide into 5 cases to check if all of these
+    tetrominoes can tile a standard $ 8 \times 8 $ Checkerboard.
+    \begin{itemize}
+        \item The first tetrominoes is the same as two dominoes stand next
+        to each other. Therefore, instead of using 32 dominoes to tile
+        a checkerboard, we just need to use 16 tetrominoes(1).
+        \item The second tetrominoes is the same also the same as
+        two dominoes connect vertically. Therefore, instead of using
+        32 dominoes to tile a checkerboard, we just need to use 16 tetrominoes(b).
+        \item In this third tetrominoes, we will need to have one more symmetry one
+        of this third tetrominoes, and then upside down the symmetry one and connect
+        two of them, it will create a tetrominoes(2) with two columns. Thus,
+        we can tile a checkerboard with 16 tetrominoes(2).
+        \item In this fourth tetrominoes, if we connect 4 tetrominoes(3)
+        with correct order, you will create a $ 4 \times 4 $ square(see in the \textbf{Figure 9} below).
+        With this $ 4 \times 4 $ square, we can easily tile a standard checkerboard.
+        \item In this fifth tetrominoes, we will label the squares of the checkerboard.
+        Start from the upper left corner is 1 and go from left to right for each row.
+        Therefore, the lower right corner of the checkerboard will be 64.\\ 
+        We can see that if we put the tetrominoes on the upper left corner, it will
+        cover square 1-2-10-11. Continue this process by putting the next tetrominoes horizontally
+        to the first tetrominoes. Consequently, it will have the order of square covered:
+        3-4-12-13,5-6-13-14. Thus, there are still squares 7 and 8 on the checkerboard can not be tiled with
+        the shape of fifth tetrominoes. Therefore, it we can not tile the checkerboard with using tetrominoes(5).
+    \end{itemize}
+    \begin{figure}
+        \begin{center}
+            \includegraphics[width = 0.8\textwidth]{CheckerTileWith4Cases.png}
+            \caption{Standard checkerboard tiled with 4 different tetrominoes}
+        \end{center}
+    \end{figure}
+\end{enumerate}
+\clearpage
+\subsection*{Exercise 52}
+Prove or disprove that you can tile a 10 $ \times $ 10 checkerboard using straight tetrominoes.
+\subsubsection*{Solution}
+In this exercise, we will label each four squares continuos 4 different colours 
+white, black, blue, yellow respectively. Therefore, there will be 26 white squares,
+26 black squares, 24 blue squares, 24 yellow squares. However, if we use
+a straight tetrominoes for $ 10 \times 10 $ checkerboard, it is 100/4 = 25, which means that 
+it will be 25 squares for each square but at we see that the checkerboard
+has 26 white, 26 black, 24 blue, 24 yellow. Therefore, it creates a contradiction between the number
+of each color. So that we cannot tile a 10 $\times$ 10 checkerboard with straight tetrominoes.
+\begin{center}
+    \textbf{THE END}
+\end{center}
 \end{document}

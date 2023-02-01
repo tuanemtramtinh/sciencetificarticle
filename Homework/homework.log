@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.1.30)  30 JAN 2023 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.1.30)  1 FEB 2023 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -757,21 +757,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 831--834
 
  []
 
+<4x4CheckerBoard.jpeg, id=117, 126.27396pt x 127.06813pt>
+File: 4x4CheckerBoard.jpeg Graphic file (type jpg)
+<use 4x4CheckerBoard.jpeg>
+Package pdftex.def Info: 4x4CheckerBoard.jpeg  used on input line 851.
+(pdftex.def)             Requested size: 126.27364pt x 127.06781pt.
 [30
 
- <./5x5Checkerboard-01.png>] [31] (homework.aux) ) 
+ <./5x5Checkerboard-01.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 855--860
+
+ []
+
+<8x8CheckerBoardBarrier.png, id=122, 248.93pt x 251.94125pt>
+File: 8x8CheckerBoardBarrier.png Graphic file (type png)
+<use 8x8CheckerBoardBarrier.png>
+Package pdftex.def Info: 8x8CheckerBoardBarrier.png  used on input line 880.
+(pdftex.def)             Requested size: 248.92938pt x 251.94063pt.
+[31 <./4x4CheckerBoard.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 884--893
+
+ []
+
+[32 <./8x8CheckerBoardBarrier.png>]
+<GomoryTheorem-01.png, id=133, 632.6034pt x 307.3884pt>
+File: GomoryTheorem-01.png Graphic file (type png)
+<use GomoryTheorem-01.png>
+Package pdftex.def Info: GomoryTheorem-01.png  used on input line 902.
+(pdftex.def)             Requested size: 276.00105pt x 134.11154pt.
+ [33
+
+ <./GomoryTheorem-01.png>] [34]
+<8x8Checkerboard3Color.png, id=141, 389.455pt x 398.48875pt>
+File: 8x8Checkerboard3Color.png Graphic file (type png)
+<use 8x8Checkerboard3Color.png>
+Package pdftex.def Info: 8x8Checkerboard3Color.png  used on input line 946.
+(pdftex.def)             Requested size: 276.00105pt x 282.41216pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 964--972
+
+ []
+
+[35
+
+ <./8x8Checkerboard3Color.png>]
+<8x8CheckerboardTri.png, id=146, 261.97874pt x 257.96375pt>
+File: 8x8CheckerboardTri.png Graphic file (type png)
+<use 8x8CheckerboardTri.png>
+Package pdftex.def Info: 8x8CheckerboardTri.png  used on input line 979.
+(pdftex.def)             Requested size: 261.9781pt x 257.9631pt.
+ [36 <./8x8CheckerboardTri.png>]
+<5dominoes.png, id=151, 461.47406pt x 152.82094pt>
+File: 5dominoes.png Graphic file (type png)
+<use 5dominoes.png>
+Package pdftex.def Info: 5dominoes.png  used on input line 994.
+(pdftex.def)             Requested size: 461.47292pt x 152.82054pt.
+
+Overfull \hbox (116.47292pt too wide) in paragraph at lines 994--995
+ [] 
+ []
+
+[37
+
+ <./5dominoes.png>]
+<CheckerTileWith4Cases.png, id=159, 633.86812pt x 554.07pt>
+File: CheckerTileWith4Cases.png Graphic file (type png)
+<use CheckerTileWith4Cases.png>
+Package pdftex.def Info: CheckerTileWith4Cases.png  used on input line 1025.
+(pdftex.def)             Requested size: 276.00105pt x 241.26369pt.
+ [38 <./CheckerTileWith4Cases.png>] [39
+
+] (homework.aux) ) 
 Here is how much of TeX's memory you used:
- 16011 strings out of 476375
- 311670 string characters out of 5790391
+ 16061 strings out of 476375
+ 312948 string characters out of 5790391
  1863299 words of memory out of 5000000
- 36083 multiletter control sequences out of 15000+600000
+ 36125 multiletter control sequences out of 15000+600000
  521104 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,104p,912b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on homework.pdf (31 pages, 269800 bytes).
+Output written on homework.pdf (39 pages, 371794 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
+ 231 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 
