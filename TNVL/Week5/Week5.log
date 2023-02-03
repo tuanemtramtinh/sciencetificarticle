@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.1.30)  1 FEB 2023 17:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.1.30)  3 FEB 2023 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -493,64 +493,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--20
  []
 
 
-Overfull \hbox (81.84448pt too wide) detected at line 45
+Overfull \hbox (93.80052pt too wide) detected at line 46
 []
  []
 
 [1
 
 {C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (87.81555pt too wide) detected at line 71
+Overfull \hbox (87.81555pt too wide) detected at line 72
 []
  []
 
 
-Overfull \hbox (95.47768pt too wide) detected at line 97
+Overfull \hbox (107.43372pt too wide) detected at line 98
 []
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 [3]
-Overfull \hbox (75.21034pt too wide) in paragraph at lines 155--168
+Overfull \hbox (75.21034pt too wide) in paragraph at lines 156--169
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-Overfull \hbox (30.62366pt too wide) detected at line 175
+Overfull \hbox (30.62366pt too wide) detected at line 176
 []
  []
 
 
-Overfull \hbox (82.29048pt too wide) detected at line 185
+Overfull \hbox (82.29048pt too wide) detected at line 186
 []
  []
 
 
-Overfull \hbox (14.9744pt too wide) detected at line 190
+Overfull \hbox (14.9744pt too wide) detected at line 191
 []
  []
 
 [4]
-Overfull \hbox (66.64122pt too wide) detected at line 200
+Overfull \hbox (66.64122pt too wide) detected at line 201
 []
  []
 
 
-Overfull \hbox (69.4248pt too wide) detected at line 216
+Overfull \hbox (69.4248pt too wide) detected at line 217
 []
  []
 
 
-Overfull \hbox (75.21034pt too wide) in paragraph at lines 220--233
+Overfull \hbox (75.21034pt too wide) in paragraph at lines 221--234
  [] 
  []
 
@@ -564,7 +564,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,10n,65p,322b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on Week5.pdf (6 pages, 161093 bytes).
+Output written on Week5.pdf (6 pages, 161278 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
