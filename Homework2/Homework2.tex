@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{pgfplots}
+\usepackage{bm}
+\usepackage{bookmark}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Other Settings
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{a4paper}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{ocre}{RGB}{243,102,25}
+\definecolor{mygray}{RGB}{243,243,244}
+\definecolor{deepGreen}{RGB}{26,111,0}
+\definecolor{shallowGreen}{RGB}{235,255,255}
+\definecolor{deepBlue}{RGB}{61,124,222}
+\definecolor{shallowBlue}{RGB}{235,249,255}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Define an orangebox command %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\orangebox[1]{\fcolorbox{ocre}{mygray}{\hspace{1em}#1\hspace{1em}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\normalfont}{0cm}{\rmfamily\bfseries}{}{1em}{{\color{black}\thmname{#1}~\thmnumber{#2}}\thmnote{\,--\,#3}}
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]
+\theoremstyle{mytheoremstyle}
+\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]
+\theoremstyle{myproblemstyle}
+\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plotting Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{width=8cm,compat=1.9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Homework 2}
+\author{Nguyen Tuan Anh - 2252038 - CN01}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    \maketitle
+    \section*{Section 2.1}
+    \subsection*{Exercise 11}
+        Determine whether each of these statements is true or false.
+        \begin{enumerate} [label = (\alph*)]
+            \item 0 $ \in \emptyset$
+            \item $ \emptyset \in \{0\}$
+            \item $ \{0\} \subset \emptyset $
+            \item $ \emptyset \subset \{0\} $
+            \item $ \{0\} \in \{0\} $
+            \item $ \{0\} \subset \{0\} $
+            \item $ \{\emptyset\} \subseteq \{\emptyset\}$
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item 0 $ \in \emptyset$: This statement is false because $\emptyset$
+            has no elements so 0 can not be an element of the empty set.
+            \item $ \emptyset \in \{0\}$: This statement is false because
+            $ \emptyset $ is not an element in set \{0\}.
+            \item $ \{0\} \subset \emptyset $: This statement is false because
+            $ \emptyset $ has no elements so that \{0\} can not be a subset
+            of $ \emptyset $.
+            \item $ \emptyset \subset \{0\} $: This statement is true because
+            $ \emptyset $ is one of the two sets that every nonempty set is
+            guaranteed to have.
+            \item $ \{0\} \in \{0\} $: This statement is false because 
+            $ \{0\} $ is an element of \{\{0\}\} not an element of \{0\}.
+            \item $ \{0\} \subset \{0\} $: This statement is false because the
+            two set all have the same elements 0 so that is must be $ \subseteq $.
+            \item $ \{\emptyset\} \subseteq \{\emptyset\}$: This statement is true
+            because both singleton set have the same element $ \emptyset $. Therefore, this
+            statement is true.
+        \end{enumerate}
+    \subsection*{Exercise 12}
+        Determine whether these statements are true or false.
+        \begin{enumerate} [label = (\alph*)]
+            \item $ \emptyset \in \{\emptyset\} $
+            \item $ \emptyset \in \{\emptyset,\{\emptyset\}\} $
+            \item $ \{\emptyset\} \in \{\emptyset\} $
+            \item $ \{\emptyset\} \in \{\{\emptyset\}\} $
+            \item $ \{\emptyset\} \subset \{\emptyset, \{\emptyset\}\} $
+            \item $ \{\{\emptyset\}\} \subset \{\emptyset, \{\emptyset\}\} $
+            \item $ \{\{\emptyset\}\} \subset \{\{\emptyset\}, \{\emptyset\}\} $
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item \(\emptyset \in \{\emptyset\}\): This statement is true
+            because \(\emptyset\) is an element of a singleton set contains 
+            element \(\emptyset\).
+            \item \(\emptyset \in \{\emptyset,\{\emptyset\}\}\): This statement
+            is true because \(\emptyset\) is an element of the set 
+            $\{\emptyset,\{\emptyset\}\}$.
+            \item $ \{\emptyset\} \in \{\emptyset\} $: This statement is false
+            because \(\emptyset\) must be an element of \(\{\{\emptyset\}\}\).
+            \item $ \{\emptyset\} \in \{\{\emptyset\}\} $: This statement is true
+            because the set \(\{\{\emptyset\}\}\) contains \(\{\emptyset\}\).
+            \item $ \{\emptyset\} \subset \{\emptyset, \{\emptyset\}\} $: This
+            statement is true because \(\emptyset\) is an element is the set \(\{\emptyset, \{\emptyset\}\}\)
+            so the set contains \(\emptyset\) is a subset of $\{\emptyset, \{\emptyset\}\}$.
+            \item $ \{\{\emptyset\}\} \subset \{\emptyset, \{\emptyset\}\} $: This
+            statement is true and its reason is the same as problem (e).
+            \item $ \{\{\emptyset\}\} \subset \{\{\emptyset\}, \{\emptyset\}\} $:
+            We can see that the set $\{\{\emptyset\}, \{\emptyset\}\}$ has two elements which
+            are equal to each other. Therefore, we can simplify it to \(\{\{\emptyset\}\}\).
+            Therefore, this statement is false because these sets are equal to each other so
+            it must be \(\subseteq\) instead of \(\subset\).
+        \end{enumerate}
+    \subsection*{Exercise 13}
+        Determine whether each of these statements is true or false.
+        \begin{enumerate} [label = (\alph*)]
+            \item \(x \in \{x\}\)
+            \item \(\{x\} \subseteq \{x\}\)
+            \item \(\{x\} \in \{x\}\)
+            \item \(\{x\} \in \{\{x\}\}\)
+            \item \(\emptyset \subseteq \{x\}\)
+            \item \(\emptyset \in \{x\}\)
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item \(x \in \{x\}\): This statement is true because \(x\) is an element in set
+            \(x\).
+            \item \(\{x\} \subseteq \{x\}\): This statement is true.
+            \item \(\{x\} \in \{x\}\): This statement is false because \(x\) is an element of 
+            \(\{\{x\}\}\) not \(\{x\}\).
+            \item \(\{x\} \in \{\{x\}\}\): This statement is true due to the reason from problem(c).
+            \item \(\emptyset \subseteq \{x\}\): This statement is true according to \textbf{Theorem 1}.
+            \item \(\emptyset \in \{x\}\): This statement is false because \(\emptyset\) is not 
+            an element of set \(\{x\}\).
+        \end{enumerate}
+    \subsection*{Exercise 26}
+        Determine whether each of these sets is the power set of 
+        a set, where a and b are distinct elements.
+        \begin{enumerate} 
+            \item \(\emptyset\)
+            \item \(\{\emptyset, \{a\}\}\)
+            \item \(\{\emptyset, \{a\}, \{\emptyset, a\}\}\)
+            \item \(\{\emptyset, \{a\}, \{b\}, \{a, b\}\}\)
+        \end{enumerate}
+    \subsubsection*{Solution}
+\end{document}
