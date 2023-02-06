@@ -154,11 +154,75 @@
     \subsection*{Exercise 26}
         Determine whether each of these sets is the power set of 
         a set, where a and b are distinct elements.
-        \begin{enumerate} 
+        \begin{enumerate} [label = (\alph*)]
             \item \(\emptyset\)
             \item \(\{\emptyset, \{a\}\}\)
             \item \(\{\emptyset, \{a\}, \{\emptyset, a\}\}\)
             \item \(\{\emptyset, \{a\}, \{b\}, \{a, b\}\}\)
         \end{enumerate}
     \subsubsection*{Solution}
+        The set(d) is the power set of set \{a, b\} because the set has two elements a and b
+        so that its power set has \(2^2 = 4\) elements, which has the same number of elements
+        of set(d). 
+        \begin{align*}
+            \mathcal{P}(\{a, b\}) = \{\emptyset, \{a\}, \{b\}, \{a, b\}\}
+        \end{align*}
+    \subsection*{Exercise 27}
+        Prove that \(\mathcal{P}(A) \subseteq \mathcal{P}(B)\) if and only if \(A\subseteq B\).
+    \subsubsection*{Solution}
+        There are two things we need to prove:
+        \begin{align*}
+            (\mathcal{P}(A) \subseteq \mathcal{P}(B) \to A \subseteq B) \land (A \subseteq B \to \mathcal{P}(A) \subseteq \mathcal{P}(B))
+        \end{align*}
+        \begin{itemize}
+            \item \(\mathcal{P}(A) \subseteq \mathcal{P}(B) \to A \subseteq B\):\\
+            
+            \(\mathcal{P}(A) \subseteq \mathcal{P}(B)\) means that every element of power set A
+            is also an element of power set B. Addtionally, we all know that power set of a set
+            has \(2^n\) elements created from the combinations of all the elements from the original
+            set. Because all every element of power set A is also an element of power set B so we can infer that
+            the element of set A is also an element of set B because they have the same combinations in the power set.
+            Therefore, this case is true.
+            \item \(A \subseteq B \to \mathcal{P}(A) \subseteq \mathcal{P}(B)\)\\
+            
+            \(A \subseteq B\) means that every element of A is also an element of B. Because A and B
+            have the same element so that there combinations of elements of these two sets will be the same.
+            Therefore, the elements power set of A and B will be the same because both of them contain
+            all subsets of A and B(We have that \(A \subseteq B\)). Therefore, this case is true.
+        \end{itemize}
+        Because both cases are true so that \((\mathcal{P}(A) \subseteq \mathcal{P}(B) \to A \subseteq B) \land (A \subseteq B \to \mathcal{P}(A) \subseteq \mathcal{P}(B))\)
+        is true and it is equivalent to \(\mathcal{P}(A) \subseteq \mathcal{P}(B) \leftrightarrow A \subseteq B\).
+    \subsection*{Exercise 28} Show that if \(A \subseteq C\) and \(B \subseteq D\), then \(A \times B \subseteq C \times D\)
+    \subsubsection*{Solution} Because A is a subset of C and 
+    B is a subset of D. Suppose that we have set A, B, C and D:
+        \begin{itemize}
+            \item \(A = \{a, b\}\)
+            \item \(B = \{c, d\}\)
+            \item \(C = \{a, b\}\)
+            \item \(D = \{c, d\}\)
+        \end{itemize}
+        We have that: 
+        \begin{align*}
+            A \times B = \{(a,c),(a,d),(b,c),(b,d)\}\\
+            C \times D = \{(a,c),(a,d),(b,c),(b,d)\}
+        \end{align*}
+        After using \textbf{Cartesian Product} to calculate \(A \times B\), \(C \times D\), we can
+        see that every element \(A \times B\) is also the element of \(C \times D\). Therefore,
+        we can infer that \(A \times B \subseteq C \times D\).
+    \subsection*{Exercise 41}
+        Explain why $A \times B \times C$ and $(A \times B) \times C$ are not the same.
+    \subsubsection*{Solution}
+        Let \(A = \{0, 1\}, B = \{1, 2\}, C = \{0, 1, 2\}\)
+        \begin{align*}
+            A \times B \times C &= \{(0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 2, 0), (0, 2, 1),\\
+            &(0, 2, 2),(1, 1, 0), (1, 1, 1), (1, 1, 2), (1, 2, 0), (1, 2, 1), (1, 2, 2)\}\\
+            A \times B &= \{(0,1), (0,2), (1,1), (1,2)\}\\
+            (A \times B) \times C &= \{((0,1),0,),((0, 1), 1), ((0, 1), 2), ((0, 2), 0), ((0, 2), 1),\\
+            &((0, 2), 2), ((1, 1), 0), ((1, 1), 1), ((1, 1), 2), ((1, 2), 0), ((1, 2), 1), ((1, 2), 2)\}
+        \end{align*}
+    As we can see that \(A \times B \times C\) gives us  a set of 3-tuples has a form (a, b, c) with 
+    \(a \in A, b \in B, c \in C\). However, \((A \times B) \times C\) gives us a set of 2-tuples has
+    a form ((a, b), c) with \((a,b) \in A \times B\) and \(c \in C\). This is different from \(A \times B \times C\)
+    because \(A \times B \times C\) is a 3-tuples but \((A \times B) \times C\) is a 2-tuples which has the
+    first element is a ordered pair of \(A \times B\). Therefore, \(A \times B \times C\) is different from \((A \times B) \times C\)
 \end{document}
