@@ -264,4 +264,49 @@
         Let \(a \in A, b \in B, c \in C\) so that \(A \times B\) will be \((a, b)\) and \(A \times C\) will be \((a, c)\).
         Because we have that \(A \times B = A \times C\) so that \((a,b) = (a,c)\). \((a,b) = (a,c)\) if and only if a = a and b = c.
         Addtionally, \(b \in B, c \in C\) so that \(B = C\).
-\end{document}
+    \section*{Section 2.2}
+    \subsection*{Exercise 15}
+        Prove the second De Morgan law in Table 1 by showing that if A and B are sets, then \(\overline{A \cap B} = \overline{A} \cup \overline{B}\)
+        \begin{enumerate} [label = (\alph*)]
+            \item by showing each side is a subset of the other side.
+            \item using membership table.
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item To show each side is a subset of other side, we will need to prove that \(\overline{A \cap B} \subseteq \overline{A} \cup \overline{B}\)
+            and \(\overline{A} \cup \overline{B} \subseteq \overline{A \cap B}\)
+            \begin{itemize}
+                \item \(\overline{A \cap B} \subseteq \overline{A} \cup \overline{B}\): Suppose x is an element
+                in \(\overline{A \cap B}\) so \(x \in \overline{A \cap B}\). Therefore, \(x \notin A \cap B\) and we can transfer
+                it into \(\lnot((x \in A) \land (x \in B))\). Applying De Morgan law, it will be \(\lnot(x \in A) \lor \lnot(x \in B)\). 
+                Using the definition of negation of propositions, we have \(x \notin A\) or \(x \notin B\) and can be transfered to
+                \(x \in \overline{A}\) or \(x \in \overline{B}\). From this, we can infer that \(x \in \overline{A} \cup \overline{B}\).
+                Because \(x \in \overline{A \cap B}\) and also \(x \in \overline{A} \cup \overline{B}\) so that \(\overline{A \cap B} \subseteq \overline{A} \cup \overline{B}\).
+                \item \(\overline{A} \cup \overline{B} \subseteq \overline{A \cap B}\): Suppose x is an element 
+                in \(\overline{A} \cup \overline{B}\) so \(x \in \overline{A} \cup \overline{B}\). Therefore, \(x \notin A\) or \(x \notin B\)
+                and we can transfer it to \(\lnot(x\in A) \lor \lnot(x\in B)\). Applying De Morgan law, it will be \(\lnot((x \in A) \land (x \in B))\).
+                By the definition of intersection, it follows that \(\lnot (x \in A \cap B)\), which means that \(x \notin A \cap B\) and
+                we can infer that \(x \in \overline{A \cap B}\). Because \(x \in \overline{A} \cup \overline{B}\) and
+                also \(x \in \overline{A \cap B}\) so that \(\overline{A} \cup \overline{B} \subseteq \overline{A \cap B}\).
+            \end{itemize}
+            Because we have shown that each set is a subset of the other, so \(\overline{A \cap B} = \overline{A} \cup \overline{B}\).
+            \item Using membership table:\\
+                \begin{center}
+                    \begin{tabular}{|c|c|c|c|c|c|c|}
+                        \hline
+                        A & B & \(\overline{A}\) & \(\overline{B}\) & \(A \cap B\) & \(\overline{A \cap B}\) & \(\overline{A} \cup \overline{B}\)\\
+                        \hline
+                        1 & 1 & 0 & 0 & 1 & 0 & 0\\
+                        \hline
+                        1 & 0 & 0 & 1 & 0 & 1 & 1\\
+                        \hline
+                        0 & 1 & 1 & 0 & 0 & 1 & 1\\
+                        \hline
+                        0 & 0 & 1 & 1 & 1 & 1 & 1\\
+                        \hline
+                    \end{tabular}
+                \end{center}
+            From the membership table, we see that the value of \(\overline{A \cap B}\) and \(\overline{A} \cup \overline{B}\) are the same so that we can
+            conclude that \(\overline{A \cap B} = \overline{A} \cup \overline{B}\).
+        \end{enumerate}
+\end{document} 

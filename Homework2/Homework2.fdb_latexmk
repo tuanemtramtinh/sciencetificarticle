@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1675785491 "c:/Users/pc/Desktop/Latex/Homework2/Homework2.tex" "Homework2.pdf" "Homework2" 1675785494 0
+["pdflatex"] 1675791092 "c:/Users/pc/Desktop/Latex/Homework2/Homework2.tex" "Homework2.pdf" "Homework2" 1675791096 0
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1675687822 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1675052846 11548 4a1cf54c960cd05530facd5f390bc11f ""
   "C:/Users/pc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1675053420 23172458 74956b4b6edf4e6bd84a7efe126b412c ""
@@ -237,9 +237,9 @@
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1650051284 2245 c8a4088d07cffc2e5207730c738edd76 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1650051284 20785 71a3d72ab517959a6979c27e6176bec1 ""
-  "Homework2.aux" 1675785494 620 17694207d15cf4917dd166373405f286 "pdflatex"
-  "Homework2.tex" 1675785490 16463 dd30aa976839b1753b6b62b5e357d91f ""
-  "c:/Users/pc/Desktop/Latex/Homework2/Homework2.tex" 1675785490 16463 dd30aa976839b1753b6b62b5e357d91f ""
+  "Homework2.aux" 1675791095 620 cd7bde83f7f0ac791cc205f3f93a4132 "pdflatex"
+  "Homework2.tex" 1675791091 20009 b9c1cd442f1c49d007729a20c9c8a9b3 ""
+  "c:/Users/pc/Desktop/Latex/Homework2/Homework2.tex" 1675791091 20009 b9c1cd442f1c49d007729a20c9c8a9b3 ""
   (generated)
   "Homework2.aux"
   "Homework2.log"
