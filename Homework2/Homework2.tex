@@ -193,8 +193,7 @@
         Because both cases are true so that \((\mathcal{P}(A) \subseteq \mathcal{P}(B) \to A \subseteq B) \land (A \subseteq B \to \mathcal{P}(A) \subseteq \mathcal{P}(B))\)
         is true and it is equivalent to \(\mathcal{P}(A) \subseteq \mathcal{P}(B) \leftrightarrow A \subseteq B\).
     \subsection*{Exercise 28} Show that if \(A \subseteq C\) and \(B \subseteq D\), then \(A \times B \subseteq C \times D\)
-    \subsubsection*{Solution} Because A is a subset of C and 
-    B is a subset of D. Suppose that we have set A, B, C and D:
+    \subsubsection*{Solution} Because A is a subset of C and B is a subset of D. Suppose that we have set A, B, C and D:
         \begin{itemize}
             \item \(A = \{a, b\}\)
             \item \(B = \{c, d\}\)
@@ -220,9 +219,44 @@
             (A \times B) \times C &= \{((0,1),0,),((0, 1), 1), ((0, 1), 2), ((0, 2), 0), ((0, 2), 1),\\
             &((0, 2), 2), ((1, 1), 0), ((1, 1), 1), ((1, 1), 2), ((1, 2), 0), ((1, 2), 1), ((1, 2), 2)\}
         \end{align*}
-    As we can see that \(A \times B \times C\) gives us  a set of 3-tuples has a form (a, b, c) with 
-    \(a \in A, b \in B, c \in C\). However, \((A \times B) \times C\) gives us a set of 2-tuples has
-    a form ((a, b), c) with \((a,b) \in A \times B\) and \(c \in C\). This is different from \(A \times B \times C\)
-    because \(A \times B \times C\) is a 3-tuples but \((A \times B) \times C\) is a 2-tuples which has the
-    first element is a ordered pair of \(A \times B\). Therefore, \(A \times B \times C\) is different from \((A \times B) \times C\)
+        As we can see that \(A \times B \times C\) gives us  a set of 3-tuples has a form (a, b, c) with 
+        \(a \in A, b \in B, c \in C\). However, \((A \times B) \times C\) gives us a set of 2-tuples has
+        a form ((a, b), c) with \((a,b) \in A \times B\) and \(c \in C\). This is different from \(A \times B \times C\)
+        because \(A \times B \times C\) is a 3-tuples but \((A \times B) \times C\) is a 2-tuples which has the
+        first element is a ordered pair of \(A \times B\). Therefore, \(A \times B \times C\) is different from \((A \times B) \times C\)
+    \subsection*{Exercise 42}
+        Explain why\((A\times B)\times(C\times D)\)and \(A\times(B\times C)\times D\) are not the same.
+    \subsubsection*{Solution}
+        Let a, b, c, d are elements of set A, B, C, D respectively. Therefore, we have that
+        \(a \in A, b \in B, c \in C, d \in D\). We get that \(A \times B\) will be a set
+        consists ordered pairs (a, b) and \(C \times D\) also consists ordered pair (c, d).
+        Because (a,b) and (c,d) is an element of set \(A \times B\) and \(C \times D\).
+        Therefore, if we do the Cartesian product \((A\times B)\times (C\times D)\). The result
+        will be a new set consists ordered pair ((a,b),(c,d)) which has the two elements are
+        two ordered pairs from \(A \times B\) and \(C \times D\).\\
+        
+        However, \(A \times (B\times C) \times D\) is completely different. We get \(B \times C\) will be a set consists ordered
+        pair (b, c) and continue to calculate \(A \times (B \times C) \times D\), we will get a new set consists 3-tuples
+        (a,(b,c),d) with the fist element is an element \(\in A\), the second element is the element \(\in (B \times C)\), and
+        the last element is an element \(\in D\).\\
+
+        Therefore, we can infer that \((A \times B)\times(C \times D)\) and \(A \times (B \times C)\times D\) are different.
+    \subsection*{Exercise 43}
+        Prove or disprove that if A and B are sets, then \(\mathcal{P}(A \times B) = \mathcal{P}(A) \times \mathcal{P}(B)\)
+    \subsubsection*{Solution}
+        Let \(A = \{0, 1\}\) and \(B = {1, 2}\). Therefore, we get that \(|A| = |B| = 2\) and \(|A \times B| = |A| \times |B| = 2 \times 2 = 4\).
+        Because \(A \times B\) has 4 elements so that \(\mathcal{P}(A)\) will have \(2^{|A|\times|B|} = 2^4 = 16\). However, we get that
+        \(|\mathcal{P}(A)| = 2^{|A|} = 2^2 = 4\) and \(|\mathcal{P}(B)| = 2^{|B|} = 2^2 = 4\) and
+        \begin{align*}
+            |\mathcal{P}(A) \times \mathcal{P}(B)| = 2^{|A|}\times 2^{|B|} = 2^{|A| + |B|} = 2^4 =16
+        \end{align*}
+        Although the result of \(|\mathcal{P}(A\times B)|\) and \(|\mathcal{P}(A) \times \mathcal{P}(B)|\) are both equal to
+        16 but the way they give the result 16 are completely different.
+        \begin{align*}
+            |\mathcal{P}(A\times B)| = 2^{|A| \times |B|} = 2^4 = 16\\
+            |\mathcal{P}(A) \times \mathcal{P}(B)| = 2^{|A| + |B|} = 16
+        \end{align*}
+        Because \(2^{|A| \times |B|} \neq 2^{|A| + |B|}\) so we can conclude that \(\mathcal{P}(A \times B) \neq \mathcal{P}(A) \times \mathcal{P}(B)\)
+    \subsection*{Exercise 44}
+        Prove or disprove that if A, B, and C are nonempty sets and \(A \times B = A \times C\), then \(B = C\).
 \end{document}
