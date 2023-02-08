@@ -309,4 +309,36 @@
             From the membership table, we see that the value of \(\overline{A \cap B}\) and \(\overline{A} \cup \overline{B}\) are the same so that we can
             conclude that \(\overline{A \cap B} = \overline{A} \cup \overline{B}\).
         \end{enumerate}
+    \subsection*{Exercise 16}
+        Let A and B be sets. Show that
+        \begin{enumerate} [label = (\alph*)]
+            \item \((A \cap B) \subseteq A\)
+            \item \(A \subseteq (A \cup B)\)
+            \item \(A - B \subseteq A\)
+            \item \(A \cap (B - A) = \emptyset\)
+            \item \(A \cup (B - A) = A \cup B\)
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item We transfer \(A \cap B\) in propositions, it will be \((x \in A) \land (x \in B)\).
+            Because in \(A \cap B\), we have \(x \in A \) so that we can infer that \(A \cap B\) is a subset of \(A\).
+            \item We transfer \(A \cup B\) in propositions, it will be \((x \in A) \lor (x \in B)\).
+            Because \(x\) is an element of \(A\) and in \(A \cup B\), \(x\) also an element of \(A\) so \(A\) is a subset of \(B\).
+            \item We transfer \(A - B = A \cap \overline{B}\) in propositions, it will be \((x \in A) \land (x \notin B)\).
+            In \(A \cap \overline{B}\) we have \(x \in A\) so that \(x\) is an element in \(A \cap \overline{B}\) and also an element of A.
+            So \(A \cap \overline{B}\) is a subset of \(A\).
+            \item Because \(B - A = B \cap \overline{A}\). Transfer it into propositions, it will be \((x \in B) \land (x \notin A)\).
+            \(x\) not an element of \(B - A\) so that \(x\) can not be an elemnent of \(A\). Therefore, if we
+            use intersection operation, it will be \((x \in A) \land (x \in B) \land (x \notin A)\). We see that it is a
+            contradiction because \(x\) can not be both an element of \(A\) and do not belong to \(A\). Thus, it will be an \(\emptyset\).
+            \item Transfer \(B - A = B \cap \overline{A}\). Then, it will be \(A \cup (B \cap \overline{A}) = (A \cup B) \cap (A \cup 
+            \overline{A}) = (A \cup B) \cap U = A \cup B\).
+        \end{enumerate}
+    \subsection*{Exercise 17}
+        Show that if \(A\) and \(B\) are sets in a universe \(U\) then \(A \subseteq B\) if and only if \(\overline{A} \cup B = U\).
+        \begin{itemize}
+            \item \(A \subseteq B \to \overline{A}\cup B=U\): \(A \subseteq B\) means \(x\) is an element of \(A\) and \(x\) also an element of \(B\).
+            We get that \(\overline{A} \cup B\)
+        \end{itemize}
+    \subsubsection*{Solution}
 \end{document} 
