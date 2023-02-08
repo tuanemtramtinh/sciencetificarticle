@@ -336,9 +336,17 @@
         \end{enumerate}
     \subsection*{Exercise 17}
         Show that if \(A\) and \(B\) are sets in a universe \(U\) then \(A \subseteq B\) if and only if \(\overline{A} \cup B = U\).
+    \subsubsection*{Solution}
         \begin{itemize}
             \item \(A \subseteq B \to \overline{A}\cup B=U\): \(A \subseteq B\) means \(x\) is an element of \(A\) and \(x\) also an element of \(B\).
-            We get that \(\overline{A} \cup B\)
+            We get that \(\overline{A} \cup B\) is \(x \notin A \lor x \in B\). Because \(x \in B\) and \(x\) also in A due to \(A \subseteq B\). Moreover, \(A\)
+            and B are sets in universe \(U\) so that \(\overline{A} \cup B\) still in be in universe.
+            \item \(\overline{A} \cup B = U \to A \subseteq B\): From the complement laws, we have that \(\overline{A} \cup A = U\). Therefore,
+            if \(\overline{A} \cup B = U\) then \(x\) must be an elemnent of \(A\) and also an element of \(B\). Therefore, we have that
+            \((x \in A) \land (x \in B)\), which means that \(A \subseteq B\).
         \end{itemize}
-    \subsubsection*{Solution}
+        Because both cases above are all make sense so we can conclude that if \(A\) and \(B\) are sets in a universe \(U\) then
+        \begin{align*}
+            A \subseteq B \leftrightarrow \overline{A} \cup B = U 
+        \end{align*}
 \end{document} 
