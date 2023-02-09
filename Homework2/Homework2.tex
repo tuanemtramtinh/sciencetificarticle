@@ -264,6 +264,57 @@
         Let \(a \in A, b \in B, c \in C\) so that \(A \times B\) will be \((a, b)\) and \(A \times C\) will be \((a, c)\).
         Because we have that \(A \times B = A \times C\) so that \((a,b) = (a,c)\). \((a,b) = (a,c)\) if and only if a = a and b = c.
         Addtionally, \(b \in B, c \in C\) so that \(B = C\).
+    \subsection*{Exercise 49}
+    The defining property of an ordered pair is that two ordered pairs are equal if and only if their first elements are
+    equal and their second elements are equal. Surprisingly, instead of taking the ordered pair as a primitive concept, we can construct ordered pairs using basic notions from set theory. Show that if we define the ordered pair
+    (a, b) to be \{\{a\}, \{a, b\}\}, then (a, b) = (c, d) if and only if a = c and b = d.
+    \subsubsection*{Solution}
+        Define the ordered pairs (a,b) and (c,d) to be\{\{a\},\{a,b\}\} and \{\{c\},\{c,d\}\}. We need to prove that
+        \(\{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} \leftrightarrow a = b \ and \ c = d\)\\.
+        
+        Firstly, we prove that \(\{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} \to a = b \ and \ c = d\), suppose that \(\{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\}\) so that \({a} = {c}\) and we can infer that \(a = c\). For \(\{a,b\} = \{c,d\}\), we have that
+        \(a = c\) so that \(b = d\).\\
+
+        Secondly, we prove that \(a = b \ and \ c = d \to \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\}\), suppose that \(a = c\) and \(b = d\) so that we can infer \(\{a\} \subseteq \{c\}\) and \(\{c\} \subseteq \{a\}\) so that
+        \(\{a\} = \{c\}\). Because \(a = c\) and \(b = d\) it result in \(\{a,b\} \subseteq \{c,d\}\) and \(\{c,d\} \subseteq \{a,b\}\), which means that
+        \(\{a,b\} = \{c,d\}\). We have \(\{a\} = \{c\}\) and \(\{a,b\} = \{c,d\}\), we infer that \(\{\{a\},\{a,b\}\} \subseteq \{\{c\},\{c,d\}\}\)
+        and \(\{\{c\},\{c,d\}\} \subseteq \{\{a\},\{a,b\}\}\). Therefore, \(\{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\}\).\\
+
+        Because two cases above are both true so we can conclude that \(\{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} \leftrightarrow a = b \ and \ c = d\). Moreover, because the ordered
+        pair is defined in \{\{a\},\{a, b\}\} so that it can be transfered to \((a,b) = (c,d) \leftrightarrow a = b \ and \ c = d\).
+    \subsubsection*{Exercise 50}
+        This exercise presents Russell's paradox. Let S be the that contains a set \(x\) if the set \(x\) does not belong to itself, so that \(S = \{x | x \notin x\}\).
+        \begin{enumerate} [label = (\alph*)]
+            \item Show the assumption that S is a member of S leads to a contradiction.
+            \item Show the assumption that S is not a member of S leads to a contradiction.
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item If \(S\) is a member of \(S\) it means that \(S\) belongs to itself(\(S \in S\)). However, we define that \textbf{S be the that contains a set x if the set x does
+            not belong to itself} so that we get \(S \notin S\) but the assumption is \(S \in S\), therefore, it leads to a contradiction.
+            \item If \(S\) not a member of \(S\), it satisfies with the hypothesis \textbf{S be the that contains a set x if the set x does
+            not belong to itself} so that we get \(S \in S\). However, the assumption is \(S \notin S\) so it leads to a contradiction.
+        \end{enumerate}
+    \subsection*{Exercise 51}
+        Describe a procedure for listing all the subsets of a finite set.
+    \subsubsection*{Solution}
+        To list all the subsets of a finite set, we will use the binary to represent it. Let \(X\) is a set contains
+        \(\{a_1, a_2, a_3, ..., a_n\}\). We will represent these elements of the set in binary, with n elements, it will be 
+        n digits of the binary and the number of subset will be \(2^n - 1\). The order of the digits in binary is the same as
+        the order of the elements in the subset. If digits \textit{i(i\(\leqslant\) n)} is 1 so it in a subset and if it is 0, it will be remove from the subset.\\
+        
+        For example, \(X = \{1, 2, 3\}\). Because there are 3 elements in the set \textit{X} so that it will be \(2^3 - 1 = 7\) subsets and 3 binary digits.
+        \begin{align*}
+            000 &= \{\}\\
+            001 &= \{3\}\\
+            010 &= \{2\}\\
+            011 &= \{2, 3\}\\
+            100 &= \{1\}\\
+            101 &= \{1, 3\}\\
+            110 &= \{1, 2\}\\
+            111 &= \{1, 2, 3\}
+        \end{align*}
+
     \section*{Section 2.2}
     \subsection*{Exercise 15}
         Prove the second De Morgan law in Table 1 by showing that if A and B are sets, then \(\overline{A \cap B} = \overline{A} \cup \overline{B}\)
@@ -374,26 +425,41 @@
             Because we have proved that \(\overline{A \cap B \cap C} \subseteq \overline{A} \cup \overline{B} \cup \overline{C}\) and \(\overline{A} \cup \overline{B} \cup \overline{C} \subseteq \overline{A \cap B \cap C}\) so that
             we can infer \(\overline{A \cap B \cap C} = \overline{A} \cup \overline{B} \cup \overline{C}\).
             \item We have the membership table:\\
-                \begin{tabular}{|c|c|c|c|c|c|c|c|}
-                    \hline 
-                    A & B & C & \(\overline{A}\) & \(\overline{B}\) & \(\overline{C}\) & \(\overline{A \cap B \cap C}\) & \(\overline{A} \cup \overline{B} \cup \overline{C}\)\\
-                    \hline 
-                    1 & 1 & 1 & 0 & 0 & 0 & 0 & 0\\
-                    \hline
-                    1 & 1 & 0 & 0 & 0 & 1 & 1 & 1\\
-                    \hline 
-                    1 & 0 & 1 & 0 & 1 & 0 & 1 & 1\\
-                    \hline
-                    1 & 0 & 0 & 0 & 1 & 1 & 1 & 1\\
-                    \hline
-                    0 & 1 & 1 & 1 & 0 & 0 & 1 & 1\\
-                    \hline
-                    0 & 1 & 0 & 1 & 0 & 1 & 1 & 1\\
-                    \hline
-                    0 & 0 & 1 & 1 & 0 & 0 & 1 & 1\\
-                    \hline 
-                    0 & 0 & 0 & 1 & 1 & 1 & 1 & 1\\
-                    \hline
-                \end{tabular}
+                \begin{center}
+                    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+                        \hline 
+                        A & B & C & \(\overline{A}\) & \(\overline{B}\) & \(\overline{C}\) & \(\overline{A \cap B \cap C}\) & \(\overline{A} \cup \overline{B} \cup \overline{C}\)\\
+                        \hline 
+                        1 & 1 & 1 & 0 & 0 & 0 & 0 & 0\\
+                        \hline
+                        1 & 1 & 0 & 0 & 0 & 1 & 1 & 1\\
+                        \hline 
+                        1 & 0 & 1 & 0 & 1 & 0 & 1 & 1\\
+                        \hline
+                        1 & 0 & 0 & 0 & 1 & 1 & 1 & 1\\
+                        \hline
+                        0 & 1 & 1 & 1 & 0 & 0 & 1 & 1\\
+                        \hline
+                        0 & 1 & 0 & 1 & 0 & 1 & 1 & 1\\
+                        \hline
+                        0 & 0 & 1 & 1 & 0 & 0 & 1 & 1\\
+                        \hline 
+                        0 & 0 & 0 & 1 & 1 & 1 & 1 & 1\\
+                        \hline
+                    \end{tabular}
+                \end{center}
+        \end{enumerate}
+    \subsection*{Exercise 20}
+        Let A, B, and C be sets. Show that:
+        \begin{enumerate} [label = (\alph*)]
+            \item \((A \cup B) \subseteq (A \cup B \cup C)\)
+            \item \((A \cap B \cap C) \subseteq (A \cap B)\)
+            \item \((A - B) - C \subseteq A - C\)
+            \item \((A - C) \cap (C - B) = \emptyset\) 
+            \item \((B - A) \cup (C - A) = (B \cup C) - A\)
+        \end{enumerate} 
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item Suppose that \(x \in (A \cup B), \)
         \end{enumerate}
 \end{document} 
