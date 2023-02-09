@@ -349,4 +349,34 @@
         \begin{align*}
             A \subseteq B \leftrightarrow \overline{A} \cup B = U 
         \end{align*}
+    \subsection*{Exercise 19}
+        Show that if A, B, and C are sets, then \(\overline{A \cap B \cap C} = \overline{A} \cup \overline{B} \cup \overline{C}\)
+        \begin{enumerate} [label = (\alph*)]
+            \item by showing each side is a subset of other side.
+            \item using a membership table.
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item We need to prove that \(\overline{A \cap B \cap C} \subseteq \overline{A} \cup \overline{B} \cup \overline{C}\) and conversely.\\
+            
+            Firstly, suppose \(x\) is an element of \(\overline{A \cap B \cap C}\), we transfer \(\overline{A \cap B \cap C}\) in propositions, it will be \(\lnot((x \in A) \land (x \in B) \land (x \in C))\). Applying the
+            De Morgan law in propositions, we transfer it to \(\lnot(x \in A) \lor \lnot(x \in B) \lor \lnot(x \in C)\). Moreover, it is also equivalent
+            to \((x \notin A) \lor (x \notin B) \lor (x \notin C) \equiv (x \in \overline{A}) \lor (x \in \overline{B}) \lor (x \in \overline{C})\). 
+            According to the definition of \textit{union}, \((x \in \overline{A}) \lor (x \in \overline{B}) \lor (x \in \overline{C}) = \overline{A} \cup \overline{B} \cup \overline{C}\).
+            Therefore, \(\overline{A \cap B \cap C} \subseteq \overline{A} \cup \overline{B} \cup \overline{C}\).\\
+
+            Secondly, suppose \(x\) is an element of \(\overline{A} \cup \overline{B} \cup \overline{C}\)we transfer \(\overline{A} \cup \overline{B} \cup \overline{C}\) in propositions, it will be
+            \((x \in \overline{A}) \lor (x \in \overline{B}) \lor (x \in \overline{C}) \equiv (x \notin A) \lor (x \notin B) \lor (x \notin C) \equiv \lnot(x \in A) \lor \lnot(x \in B) \lor \lnot(x \in C)\). 
+            Applying De Morgan law in propositions, we transfer it to \(\lnot((x \in A) \land (x \in B) \land (x \in C))\). By 
+            the definition of intersection, it will be \(\lnot(A \cap B \cap C)\), which means that \(x \notin A \cap B \cap C\).
+            Therefore, we can infer that \(x \in \overline{A \cap B \cap C}\). Thus, \(\overline{A} \cup \overline{B} \cup \overline{C} \subseteq \overline{A \cap B \cap C}\).
+
+            Because we have proved that \(\overline{A \cap B \cap C} \subseteq \overline{A} \cup \overline{B} \cup \overline{C}\) and \(\overline{A} \cup \overline{B} \cup \overline{C} \subseteq \overline{A \cap B \cap C}\) so that
+            we can infer \(\overline{A \cap B \cap C} = \overline{A} \cup \overline{B} \cup \overline{C}\).
+            \item We have the membership table:\\
+                \begin{tabular}{|c|c|c|}
+                    \hline 
+                    A & B & C\\
+                \end{tabular}
+        \end{enumerate}
 \end{document} 
