@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1675915915 "/Users/tuananh/Desktop/Latex/Homework2/Homework2.tex" "Homework2.pdf" "Homework2" 1675915916
-  "/Users/tuananh/Desktop/Latex/Homework2/Homework2.tex" 1675915915 25687 e34e89feb0bea6be679aa218ec20da3f ""
+["pdflatex"] 1675925255 "/Users/tuananh/Desktop/Latex/Homework2/Homework2.tex" "Homework2.pdf" "Homework2" 1675925256
+  "/Users/tuananh/Desktop/Latex/Homework2/Homework2.tex" 1675925255 26504 577bf3fa8afe374ba4a9938dc73de6b2 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -242,8 +242,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1675134167 2826442 4c2493792a1c2cf3fa39ba3590749d81 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Homework2.aux" 1675915916 752 80e58225e4e40dad00959ff215320938 "pdflatex"
-  "Homework2.tex" 1675915915 25687 e34e89feb0bea6be679aa218ec20da3f ""
+  "Homework2.aux" 1675925256 752 80e58225e4e40dad00959ff215320938 "pdflatex"
+  "Homework2.tex" 1675925255 26504 577bf3fa8afe374ba4a9938dc73de6b2 ""
   (generated)
   "Homework2.aux"
   "Homework2.log"

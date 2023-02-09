@@ -374,9 +374,26 @@
             Because we have proved that \(\overline{A \cap B \cap C} \subseteq \overline{A} \cup \overline{B} \cup \overline{C}\) and \(\overline{A} \cup \overline{B} \cup \overline{C} \subseteq \overline{A \cap B \cap C}\) so that
             we can infer \(\overline{A \cap B \cap C} = \overline{A} \cup \overline{B} \cup \overline{C}\).
             \item We have the membership table:\\
-                \begin{tabular}{|c|c|c|}
+                \begin{tabular}{|c|c|c|c|c|c|c|c|}
                     \hline 
-                    A & B & C\\
+                    A & B & C & \(\overline{A}\) & \(\overline{B}\) & \(\overline{C}\) & \(\overline{A \cap B \cap C}\) & \(\overline{A} \cup \overline{B} \cup \overline{C}\)\\
+                    \hline 
+                    1 & 1 & 1 & 0 & 0 & 0 & 0 & 0\\
+                    \hline
+                    1 & 1 & 0 & 0 & 0 & 1 & 1 & 1\\
+                    \hline 
+                    1 & 0 & 1 & 0 & 1 & 0 & 1 & 1\\
+                    \hline
+                    1 & 0 & 0 & 0 & 1 & 1 & 1 & 1\\
+                    \hline
+                    0 & 1 & 1 & 1 & 0 & 0 & 1 & 1\\
+                    \hline
+                    0 & 1 & 0 & 1 & 0 & 1 & 1 & 1\\
+                    \hline
+                    0 & 0 & 1 & 1 & 0 & 0 & 1 & 1\\
+                    \hline 
+                    0 & 0 & 0 & 1 & 1 & 1 & 1 & 1\\
+                    \hline
                 \end{tabular}
         \end{enumerate}
 \end{document} 
