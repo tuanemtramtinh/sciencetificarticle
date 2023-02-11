@@ -504,5 +504,76 @@
                 &= A \cap A = A 
             \end{align*}
         \end{enumerate}
-    \subsection*{Exercise 4}
+    \subsection*{Exercise 35}
+        Let \(A, B, C\) be sets. Use the identities in Table 1 to show that \(\overline{A \cup B} \cap \overline{B \cup C} \cap \overline{A \cup C} = \overline{A} \cap \overline{B} \cap \overline{C}\)
+    \subsubsection*{Solution}
+        Applying De Morgan law, we have that:
+            \begin{align*}
+                \overline{A \cup B} &= \overline{A} \cap \overline{B}\\
+                \overline{B \cup C} &= \overline{B} \cap \overline{C}\\
+                \overline{A \cup C} &= \overline{A} \cap \overline{C}\\
+                \overline{A \cup B} \cap \overline{B \cup C} \cap \overline{A \cup C} &= \overline{A} \cap \overline{B} \cap \overline{B} \cap \overline{C} \cap \overline{A} \cap \overline{C}\\
+                &= \overline{A} \cap \overline{B} \cap \overline{C}
+            \end{align*}
+    \subsection*{Exercise 36}
+        Prove or disprove that for all sets A, B, and C, we have
+        \begin{enumerate} [label = (\alph*)]
+            \item \(A \times (B \cup C) = (A \times B) \cup (A \times C)\)
+            \item \(A \times (B \cap C) = (A \times B) \cap (A \times C)\)
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item Let \(x, y\) an ordered pair of a Cartesian Product of 2 sets. \(A \times (B \cup C)\) create ordered pair
+            (x, y) with \(x \in A\) and \(y \in B \lor y \in C\). In \((A \times B) \cup (A \times C)\), we have that 
+            \(A \times B\) create a ordered pair \(x \in A \land y \in B\), \(A \times C\) create a ordered pair
+            \(x \in A \land y \in C\). Represent in propositions, we have that:
+            \begin{align*}
+                (x \in A) \land (y \in C) \lor (x \in A )\land (y \in C)\\
+                = (x \in A) \land (y \in C \lor y \in B)
+            \end{align*}
+            Which is the same propositions as \(A \times (B \cup C)\).
+            \item Let \(x, y\) an ordered pair of a Cartesian Product of 2 sets. \(A \times (B \cap C)\) create
+            (x, y) with \(x \in A \land (y \in B \land y \in C)\). In \((A \times B) \cap (A \times C)\), we have that
+            \(A \times B\) create an ordered pair \(x \in A \land y \in B\), \(A \times C\) create an ordered pair
+            (x, y) with \(x \in A \land x \in C\). Represent in propositions, we have that:
+            \begin{align*}
+                x \in A \land y \in B \land x \in A \land y \in C\\
+                = (x \in A) \land (y \in B \land y \in C)
+            \end{align*} 
+            Which is the same propositions as \(A \times (B \cap C)\).
+        \end{enumerate}
+    \subsection*{Exercise 37}
+        Prove or disprove that for all sets A, B, and C, we have
+        \begin{enumerate} [label = (\alph*)]
+            \item \(A \times (B - C) = (A \times B) - (A \times C)\)
+            \item \(\overline{A} \times \overline{B \cup C} = \overline{A \times (B \cup C)}\)
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item In propositions, \(A \times (B - C)\) can be represented in \((x \in A) \land (y \in B \land y \notin C)\).
+            In \(A \times B\), it is \(x \in A \land y \in B\), \(A \times C\) is \(x \in A \land y \in C\). Therefore,
+            if we take the \textit{difference}, it will be:
+            \begin{align*}
+                &(x \in A \land y \in B) \land \lnot(x \in A \land y \in C)\\
+                = &(x \in A \land y \in B) \land (x \notin A \lor y \notin C)\\
+                = &(x \in A \land x \notin A \land y \in B) \lor (x \in A \land y \in B \land y \notin C)\\
+                = & \emptyset \lor (x \in A \land y \in B \land y \notin C)\\
+                = & (x \in A) \land (y \in B \land y \notin C).
+            \end{align*}
+        This propositions is the same as \(A \times (B - C)\).
+            \item We have that:
+                \begin{align*}
+                    \overline{A} \times \overline{B \cup C} &= \overline{A} \times (\overline{B} \cap \overline{C})\\
+                    &= x \notin A \land (y \notin B \land y \notin C)\\
+                    \overline{A \times (B \cup C)} &= \lnot(x \in A \land (y \in B \lor y \in C))\\
+                    &= x \notin A \lor (y \notin B \land y \notin C)\\
+                \end{align*}
+            We see that the difference is the \(\land\) and \(\lor\) operator behind \(x \notin A\). Therefore,
+            \begin{align*}
+                \overline{A} \times \overline{B \cup C} \neq \overline{A \times (B \cup C)}
+            \end{align*}
+        \end{enumerate}
+    \section*{Section 2.3}
+    \subsection*{Exercise 15}
+        Determine whether the function \(f: \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}\)
 \end{document} 
