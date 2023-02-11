@@ -460,6 +460,49 @@
         \end{enumerate} 
     \subsubsection*{Solution}
         \begin{enumerate} [label = (\alph*)]
-            \item Suppose that \(x \in (A \cup B), \)
+            \item Suppose that \(x \in (A \cup B)\), in propositions it is \((x \in A) \lor (x \in B)\) and \(A \cup B \cup C\) in
+            propositions will be \((x \in A) \lor (x \in B) \lor (x \in C)\). Because in \(A \cup B \cup C\), we also have that
+            \(x \in A\) and \(x \in B\). Therefore, \((A \cup B) \subseteq (A \cup B \cup C)\).
+            \item Suppose that  \(x \in (A \cap B \cap C)\) so \(x\) is an element that A, B, C all have. In \(A \cap B\),
+            \(x\) is the elements that both A and B have. Therefore, the element in \(A \cap B \cap C\) will also the element in
+            \(A \cap B\). Thus, \((A \cap B \cap C) \subseteq (A \cap B)\).
+            \item \((A - B) - C = (A \cap \overline{B}) \cap \overline{C} = A \cap \overline{B} \cap \overline{C}\). Suppose
+            that \(x \in (A \cap \overline{B} \cap \overline{C})\) so \(x\) is an element that \(A, \overline{B}, \overline{C}\).
+            In \(A - C = A \cap \overline{C}\), \(x\) is the element that both \(A, \overline{C}\) have. Therefore, the element in
+            \((A - B) - C\) will also the element in \(A - C\). Thus, \((A - B) - C \subseteq A - C\).
+            \item \((A - C) \cap (B - C) = A \cap \overline{C} \cap C \cap \overline{B}\). According to \textbf{Complement laws}, \(C \cap \overline{C} = \emptyset\).
+            Due to \textbf{Identity laws}, \(A \cap \overline{B} \cap \emptyset = \emptyset\).
+            \item We have that: 
+            \begin{align*}
+                (B - A) \cup (C - A) &= (B \cap \overline{A}) \cup (C \cap \overline{A})\\
+                (B \cup C) - A &= (B \cup C) \cap \overline{A} \\
+                                &= (B \cap \overline{A}) \cup (C \cap \overline{A})\\
+            \end{align*}
+            Because both of them are equal to \((B \cap \overline{A}) \cup (C \cap \overline{A})\) so that 
+            \((B - A) \cup (C - A) = (B \cup C) - A\).
         \end{enumerate}
+    \subsection*{Exercise 21}
+        Show that if \(A\) and \(B\) are sets, then
+        \begin{enumerate} [label = (\alph*)]
+            \item \(A - B = A \cap \overline{B}\)
+            \item \((A \cap B) \cup (A \cap \overline{B}) = A\)
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item \(A - B = A \cap \overline{B}\): We got that \(A - B\) is the difference of \(A\) and \(B\).
+            According to the definition of \textit{difference}, transfer in propositions \((x \in A) \land (x \notin B)\), which is 
+            the same as \(A \cap \overline{B}\) because in propositions, \(A \cap \overline{B}\) is \((x \in A) \cap (x \in \overline{B})\).
+            \(x \in \overline{B}\) means \(x\) is the element not in \(B\). Therefore, \(A - B = A \cap \overline{B}\).
+            \item \((A \cap B) \cup (A \cap \overline{B}) = A\) 
+            \begin{align*}
+                (A \cap B) \cup (A \cap \overline{B}) &= ((A \cap B) \cup A) \cap ((A \cap B) \cup \overline{B})\\
+                &= (A \cup A) \cap (B \cup A) \cap (A \cup \overline{B})\\
+                &= A \cap (B \cup A) \cap (A \cup \overline{B})\\
+                &= A \cap ((B \cap A) \cup (B \cap \overline{B}) \cup (A \cap A) \cup (A \cap \overline{B}))\\
+                &= A \cap ((B \cap A) \cup \emptyset \cup A \cup (A \cap \overline{B}))\\
+                &= A \cap ((A \cap (B \cup \overline{B})) \cup A)\\
+                &= A \cap A = A 
+            \end{align*}
+        \end{enumerate}
+    \subsection*{Exercise 4}
 \end{document} 
