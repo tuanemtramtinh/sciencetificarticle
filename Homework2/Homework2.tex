@@ -574,39 +574,54 @@
             \end{align*}
         \end{enumerate}
     \section*{Section 2.3}
-    \subsection*{Exercise 15}
-        Determine whether the function \(f: \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}\)
+    \subsection*{Exercise 25}
+    Let \(f:\mathbb{R}\to\mathbb{R}\) and let \(f(x) > 0\) for all \(x \in R\). Show that \(f(x)\) is strictly decreasing if and only if the function \(g(x) = 1/f(x)\) is strictly increasing.
+    \subsubsection*{Solution}
+        We need to prove that \(f(x)\) is strictly decreasing \(\to g(x) = 1/f(x)\) is strictly increasing and conversely.
+        \begin{itemize}
+            \item Suppose \(f(x)\) is strictly decreasing. When it strictly decreasing, we know that \(f(x) > f(y)\), whenever \(x < y\). And we take these 2 \(x\) and \(y\) to 
+            be \(f(x)\) and \(f(y)\) in \(g(x)\). \(g(x) = 1/f(x)\), \(g(y) = 1/f(y)\). Because \(f(x) > f(y)\) so that \(g(x) = 1/f(x) < g(y) = 1/f(y)\) so that \(g(x)\) is stricly increasing.
+            \item Suppose \(g(x)\) is strictly increasing. When it strictly increasing, we know that \(g(x) < g(y)\), whenever \(x < y\). We have that \(g(x) = 1/f(x) < g(y) = 1/f(y)\). Because
+            \(1/f(x) < 1/f(y)\) so that \(f(x) > f(y)\) and \(x > y\). Therefore, \(f(x)\) is strictly decreasing.
+        \end{itemize}
+        Because both cases are \textbf{true} so that \(f(x)\) is strictly decreasing if and only if the function \(g(x) = 1/f(x)\) is strictly increasing.
+    \subsection*{Exercise 26}
         \begin{enumerate} [label = (\alph*)]
-            \item \(f(m,n) = m + n\)
-            \item \(f(m,n) = m^2 + n^2\)
-            \item \(f(m,n) = m\)
-            \item \(f(m,n) = |n|\)
-            \item \(f(m,n) = m - n\)
+            \item Prove that a strictly increasing function from \(\mathbb{R}\) to itself is one-to-one.
+            \item Give an example of an increasing function from \(\mathbb{R}\) to itself is not one-to-one.
         \end{enumerate}
     \subsubsection*{Solution}
         \begin{enumerate} [label = (\alph*)]
-            \item \(f(m,n) = m + n\): Take any \(y \in Z \). We need a pair \((m, n) \in \mathbb{Z}\times\mathbb{Z}\).
-            We have that \(f(m, n) = m + n \leftrightarrow m + n = y\). Assume \(m = 0\), we have that \(n = y\).
-            Therefore, we have a pair of \((m, n)\) is \((0, y)\). Because \(O, y\) all belong to \(\mathcal{Z}\) so
-            this pair are satisfied. Finally, we have that:
-            \begin{align*}
-                f(0, y) = 0 + y = y  
-            \end{align*}
-            Therefore, \(f(m,n) = m + n\) is onto.
-            \item \(f(m,n) = m^2 + n^2\): Take any \(y \in Z\). We need a pair \((m, n) \in \mathbb{Z}\times\mathbb{Z}\).
-            We have that \(f(m, n) = m^2 + n^2 \leftrightarrow m^2 + n^2 = y\). Assume \(m = 0\), we have that \(n = \pm\sqrt{y}\).
-            However, \(\sqrt{y}\) not always give us an integer number, sometimes it gives us an irrational number. Therefore,
-            \(f(m,n) = m^2 + n^2\) is not onto.
-            \item \(f(m,n) = |n|\). Take any \(y \in Z\). This function is onto because \(f(m,n) = m = y\). Because \(m \in Z\) and \(y \in Z\).
-            \item \(f(m,n) = |n|\). Take any \(y \in Z\). We need a pair \((m, n) \in \mathbb{Z} \times \mathbb{Z}\).
-            We have that \(f(m, n) = |n| = y\) so that \(n = \pm y\). This function is onto because assume that \(n = 1\) and \(y = -1\). This is impossible.
-            \item \(f(m,n) = m - n\). Take any \(y \in Z \). We need a pair \((m, n) \in \mathbb{Z}\times\mathbb{Z}\).
-            We have that \(f(m, n) = m - n \leftrightarrow m - n = y\). Assume \(m = 0\), we have that \(n = -y\).
-            Therefore, we have a pair of \((m,n)\) is \((0, -y)\). Because \(O, y\) all belong to \(\mathcal{Z}\) so
-            this pair are satisfied. Finally, we have that:
-            \begin{align*}
-                f(0, -y) = 0 - (-y) = y
-            \end{align*}
-            Therefore, \(f(m,n) = m - n\) is onto.
-         \end{enumerate}
+            \item In a strictly increasing function, we have that \(f(x) < f(y)\), whenever \(x < y\). From this clue, we know that \(f(x) \neq f(y)\) and \(x \neq y\).
+            According to definition of one-to-one function, the function is one-to-one if and only if \(f(a) \notin f(b)\) whenever \(a \neq b\), which is the same as the inference
+            got from the strictly increasing function. Therefore, a strictly increasing function from \(\mathbb{R}\) to itself is one-to-one.
+            \item The function \(f(x) = x^2\) is not one-to-one function because there are 2 values \(x\) and \(-x\) have the same image.
+        \end{enumerate}
+    \subsection*{Exercise 27}
+        \begin{enumerate} [label = (\alph*)]
+            \item Prove that a strictly decreasing function from \(\mathbb{R}\) to itself is one-to-one.
+            \item Give an example of a decreasing function from \(\mathbb{R}\) to itselft that is not one-to-one.
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item In a strictly increasing function, we have that \(f(x) > f(y)\), whenever \(x < y\). From this clue, we know that \(f(x) \neq f(y)\) and \(x \neq y\).
+            According to definition of one-to-one function, the function is one-to-one if and only if \(f(a) \notin f(b)\) whenever \(a \neq b\), which is the same as the inference
+            got from the strictly increasing function. Therefore, a strictly increasing function from \(\mathbb{R}\) to itself is one-to-one.
+            \item The function \(f(x) = x^2 - x\) is not one-to-one function because there are 2 values \(x = 1\) and \(x = 0\) have the same image \(y = 0\). 
+        \end{enumerate}
+    \subsection*{Exercise 33}
+        Suppose that \(g\) is a function from \(A\) to \(B\) and \(f\) is a function from \(B\) to \(C\)
+        \begin{enumerate} [label = (\alph*)]
+            \item Show that if both \(f\) and \(g\) are one-to-one functions, then \(f \circ g\) is also one-to-one.
+            \item Show that if both \(f\) and \(g\) are onto functions, then \(f \circ g\) is also onto.
+        \end{enumerate}
+    \subsubsection*{Solution}
+        \begin{enumerate} [label = (\alph*)]
+            \item \(g\) is an one-to-one function so that \(g(a) \neq g(b)(g(a),g(b) \in B)\) whenever \(a \neq b(a,b \in A)\). \(f\) is an one-to-one
+            function so that \(f(a) \neq f(b)(f(a),f(b) \in C)\) whenever \(a \neq b(a,b \in B)\). Therefore,
+            \(f \circ g(a) \neq f \circ g(b) = f(g(a)) \neq f(g(b))\) because \(f\) is one-to-one function so that \(f(g(a)) \neq f(g(b))\) whenever \(g(a) \neq g(b)\) and because
+            \(g\) is one-to-one function that \(g(a) \neq g(b)\) whenever \(a \neq b\) that \(f \circ g\) is one-to-one function(\(f(g(a)) \neq f(g(b))\) whenever \(a \neq b\)) when \(f\) and \(g\) are both one-to-one functions.
+            \item \(f\) is an onto function so that for any \(c \in C\), there is a \(b \in B\) to \(f(b) = c\). Similar to \(g\), for any \(b \in B\), there is an \(a \in A\) to \(g(a) = b\). Therefore,
+            \((f \circ g)(a) = f(g(a)) = f(b) = c\). So for every \(c \in C\), there is an \(a \in A\) to \(f(g(a)) = f(b) = c\) so that \(f \circ g\) is onto.
+        \end{enumerate}
 \end{document} 
